@@ -2,8 +2,8 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section>
-      <div className="container mx-auto">
+    <section className="h-screen px-6 xl:px-20">
+      <div className="container mx-auto ">
         <h1 className="">Hi</h1>
       </div>
     </section>

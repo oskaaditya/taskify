@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.3.6",
     "eslint-import-resolver-typescript": "^3.6.1",
+    "framer-motion": "^11.2.4",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-country-flag": "^3.1.0",
+    "react-dom": "^18",
+    "tailwind-extended-shadows": "^0.4.0",
+    "tailwind-extended-shadows-merge": "^0.2.1"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

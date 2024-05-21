@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+  max-width: 1440px !important;
+  height: auto !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}

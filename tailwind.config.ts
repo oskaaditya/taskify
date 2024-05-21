@@ -1,8 +1,21 @@
+import { nextui } from '@nextui-org/react';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}', './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      // you can configure the container to be centered
+      center: true,
+
+      // default breakpoints but with 40px removed
+      screens: {
+        sm: '600px',
+        md: '728px',
+        lg: '984px',
+        xl: '1200px',
+      },
+    },
     screens: {
       xs: { min: '475px' },
       '2xs': { min: '576px' },
@@ -46,6 +59,7 @@ const config: Config = {
       fontSize: {},
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  darkMode: 'class',
+  plugins: [require('@tailwindcss/forms'), nextui(), require('tailwind-extended-shadows')],
 };
 export default config;
