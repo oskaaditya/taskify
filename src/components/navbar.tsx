@@ -78,7 +78,7 @@ const NavbarComponent = () => {
               <NavbarItem>
                 <Button
                   as={Link}
-                  className="block bg-primary-500 px-4 py-[9.5px] font-medium text-white md:hidden"
+                  className="flex bg-primary-500 px-4 py-[9.5px] font-medium text-white md:hidden"
                   href="#"
                   variant="flat"
                   endContent={<ChevronRightIcon size={20} />}
@@ -91,7 +91,7 @@ const NavbarComponent = () => {
               <NavbarItem>
                 <Button
                   as={Link}
-                  className="hidden bg-primary-500 px-4 py-[9.5px] font-medium text-white md:block"
+                  className="hidden bg-primary-500 px-4 py-[9.5px] font-medium text-white md:flex"
                   href="#"
                   variant="flat"
                   endContent={<ChevronRightIcon size={20} />}
