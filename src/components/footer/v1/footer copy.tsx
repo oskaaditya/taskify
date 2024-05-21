@@ -1,15 +1,15 @@
 'use client';
 
 import React from 'react';
-import Logo from './logo';
 import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link } from '@nextui-org/react';
-import ChevronDownIcon from './icons/ChevronDownIcon';
 import { languageLists, linksFooterBottom, linksFooterTop } from '@/app/constants';
 import { LinksProps } from '@/types/link';
-import FacebookIcon from './icons/FacebookIcon';
-import LinkedinIcon from './icons/LinkedinIcon';
-import TwitterIcon from './icons/TwitterIcon';
 import ReactCountryFlag from 'react-country-flag';
+import FacebookIcon from '@/components/icons/FacebookIcon';
+import LinkedinIcon from '@/components/icons/LinkedinIcon';
+import TwitterIcon from '@/components/icons/TwitterIcon';
+import Logo from '@/components/logo';
+import ChevronDownIcon from '@/components/icons/ChevronDownIcon';
 
 const Footer = () => {
   const socialMediaLink: Array<LinksProps> = [
@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <section className="px-6 py-20">
+    <footer className="px-6 py-10 md:py-20">
       <div className="container mx-auto">
         <div className="flex flex-col gap-20">
           {/* Footer Top */}
@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

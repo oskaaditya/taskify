@@ -11,14 +11,18 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from '@nextui-org/react';
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import Logo from './logo';
 import ArrowRightIcon from './icons/ArrowRightIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 import CloseIcon from './icons/CloseIcon';
 import { navbarItems } from '@/app/constants';
 
-const NavbarComponent = () => {
+interface INavbar {
+  showBanner: boolean;
+}
+
+const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isBannerVisible, setIsBannerVisible] = useState(true);
 
@@ -28,7 +32,7 @@ const NavbarComponent = () => {
 
   return (
     <>
-      {isBannerVisible && (
+      {isBannerVisible && showBanner && (
         <div className="hidden h-full w-full max-w-[full] rounded-none bg-primary-500 py-[11px] text-center text-sm text-white transition-all md:block">
           <div className="relative flex w-full items-center justify-center gap-[9px]">
             <div className="rounded-full bg-white/20 px-2 py-1 text-[10px] font-bold text-white shadow-sm shadow-white/50 -shadow-x-[1px] -shadow-y-[1px]">
@@ -46,10 +50,9 @@ const NavbarComponent = () => {
             </Button>
             <Button
               as={Link}
-              href="#"
               onClick={handleCloseBanner}
               className="absolute right-6 bg-transparent p-0 text-sm text-white"
-              variant="flat"
+              isIconOnly
             >
               <CloseIcon size={16} />
             </Button>
