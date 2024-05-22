@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Logo = () => {
+interface ILogo {
+  width?: number;
+  height?: number;
+}
+
+const Logo: FC<ILogo> = ({ width, height }) => {
   return (
-    <svg width="141" height="45" viewBox="0 0 141 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width={width || 141} height={height || 45} viewBox="0 0 141 45" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M22.4604 13.3067C25.3893 10.3778 30.138 10.3778 33.067 13.3067C35.9959 16.2357 35.9959 20.9844 33.067 23.9133L19.9855 36.9948L9.3789 26.3882L22.4604 13.3067Z"
         fill="#0F2060"

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { desc, tag, title } from '../constants';
 
-const CTAOne = () => {
+const Cta = () => {
   return (
     <section className="relative bg-additional-navy px-5 py-10 md:pb-[94px] md:pt-[70px] xl:px-20">
       <Image
@@ -14,8 +14,8 @@ const CTAOne = () => {
           objectFit: 'cover',
           objectPosition: 'top left',
         }}
-        alt="cta-pattern"
-        src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1716276278/taskify/assets/images/cta-pattern.png"
+        alt="Cta-pattern"
+        src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1716276278/taskify/assets/images/Cta-pattern.png"
         className="absolute z-0 h-auto w-full"
       />
       <div className="container z-10 mx-auto">
@@ -41,4 +41,4 @@ const CTAOne = () => {
   );
 };
 
-export default CTAOne;
+export default Cta;

@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
-import '../globals.css';
-import Navbar from '@/components/navbar';
+import './globals.css';
 
-import Providers from '../providers';
-import Footer from '@/components/footer/v1/footer';
+import Providers from './providers';
 
 const manrope = Manrope({ subsets: ['latin'] });
 export const metadata: Metadata = {
@@ -20,11 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={manrope.className}>
-        <Providers>
-          <Navbar showBanner />
-          {children}
-          <Footer />
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

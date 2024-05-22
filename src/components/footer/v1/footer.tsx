@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="px-6 py-10 md:py-20">
+    <footer className="px-6 py-10 md:pb-12 md:pt-20">
       <div className="container mx-auto">
         <div className="flex flex-col gap-20">
           {/* Footer Top */}

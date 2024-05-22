@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { desc, tag, title } from '../constants';
 
-const CTATwo = () => {
+const Cta = () => {
   return (
     <section className="relative  px-5 py-10 md:pb-[94px] md:pt-[70px] xl:px-20">
       <div className="container mx-auto">
@@ -45,4 +45,4 @@ const CTATwo = () => {
   );
 };
 
-export default CTATwo;
+export default Cta;

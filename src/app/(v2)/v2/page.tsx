@@ -1,4 +1,3 @@
-import CtaOne from '@/components/cta/v1/CtaOne';
 import React from 'react';
 
 const Home = () => {
@@ -6,10 +5,9 @@ const Home = () => {
     <>
       <section className="h-screen px-6 xl:px-20">
         <div className="container mx-auto ">
-          <h1 className="">Hi</h1>
+          <h1 className="">Landing page v2</h1>
         </div>
       </section>
-      <CtaOne />
     </>
   );
 };

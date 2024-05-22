@@ -1,4 +1,3 @@
-import CTATwo from '@/components/cta/v2/CtaTwo';
 import React from 'react';
 
 const Home = () => {
@@ -6,10 +5,9 @@ const Home = () => {
     <>
       <section className="h-screen px-6 xl:px-20">
         <div className="container mx-auto ">
-          <h1 className="">Hi</h1>
+          <h1 className="">Landing Page v1</h1>
         </div>
       </section>
-      <CTATwo />
     </>
   );
 };

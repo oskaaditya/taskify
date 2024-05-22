@@ -17,12 +17,15 @@ import ArrowRightIcon from './icons/ArrowRightIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 import CloseIcon from './icons/CloseIcon';
 import { navbarItems } from '@/app/constants';
+import { usePathname } from 'next/navigation';
 
 interface INavbar {
   showBanner: boolean;
 }
 
 const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
+  const pathname = usePathname();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isBannerVisible, setIsBannerVisible] = useState(true);
 
@@ -59,7 +62,7 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
           </div>
         </div>
       )}
-      <div className="flex items-center justify-between px-6 py-[19.5px]">
+      <div className="flex items-center justify-between border-b border-neutral-200 px-6 py-[19.5px]">
         <div className="container mx-auto">
           <Navbar onMenuOpenChange={setIsMenuOpen}>
             <NavbarContent>
@@ -73,7 +76,10 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
             <NavbarContent className="hidden gap-14 sm:flex" justify="center">
               {navbarItems.map((item, index) => (
                 <NavbarItem key={`${item}-${index}`}>
-                  <Link className="w-full" href={item.url}>
+                  <Link
+                    className={`w-full ${pathname === item.url ? 'font-bold text-primary-500' : 'text-neutral-600'} `}
+                    href={item.url}
+                  >
                     {item.name}
                   </Link>
                 </NavbarItem>
