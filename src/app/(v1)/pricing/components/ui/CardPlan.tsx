@@ -21,8 +21,7 @@ const CardPlan: FC<ICardPlan> = ({ data }) => {
             {plan.id === 3 && (
               <Image
                 quality={100}
-                width={757}
-                height={954}
+                fill
                 style={{
                   objectFit: 'cover',
                 }}
