@@ -1,11 +1,14 @@
 import React from 'react';
+import PlanSection from './components/PlanSection';
+import HeroSection from './components/HeroSection';
+import FaqSection from './components/FaqSection';
 
 const Pricing = () => {
   return (
     <>
-      <section className="h-screen">
-        <div className="container mx-auto">Pricing Page</div>
-      </section>
+      <HeroSection />
+      <PlanSection />
+      <FaqSection />
     </>
   );
 };

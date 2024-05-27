@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from '@nextui-org/react';
 import { linksFooterBottom, linksFooterTop } from '@/app/constants';
-import { LinksProps } from '@/types/link';
+import { LinksProps } from '@/types/TLinks';
 import FacebookIcon from '@/components/icons/FacebookIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import TwitterIcon from '@/components/icons/TwitterIcon';
@@ -63,8 +63,8 @@ const Footer = () => {
             <div className="order-first flex max-w-[238px] flex-col gap-3 md:order-last md:max-w-[131px]">
               <p className="font-medium text-neutral-600">Get in touch</p>
               <div className="flex gap-6 md:flex-col md:gap-3">
-                <p className="text-xs text-neutral-500 md:text-sm">Menteng St, 142552, Jakarta, Indonesia.</p>
-                <p className="text-xs text-neutral-500 md:text-sm">hello@taskify.com +1 15523 124 134</p>
+                <p className="text-xs text-neutral-500 md:text-sm ">Menteng St, 142552, Jakarta, Indonesia.</p>
+                <p className="text-xs text-neutral-500 md:text-sm ">hello@taskify.com +1 15523 124 134</p>
               </div>
             </div>
 

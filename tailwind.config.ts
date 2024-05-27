@@ -5,10 +5,7 @@ const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx}', './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'],
   theme: {
     container: {
-      // you can configure the container to be centered
       center: true,
-
-      // default breakpoints but with 40px removed
       screens: {
         sm: '600px',
         md: '728px',
@@ -33,8 +30,19 @@ const config: Config = {
     },
     fontFamily: {},
     extend: {
+      fontSize: {
+        xs: ['12px', '150%'],
+        sm: ['14px', '150%'],
+        base: ['16px', '150%'],
+        lg: ['18px', '150%'],
+        xl: ['20px', '150%'],
+        h1: ['56px', '120%'],
+        h2: ['48px', '120%'],
+        h3: ['28px', '130%'],
+        h4: ['24px', '130%'],
+      },
       colors: {
-        neutrals: {
+        neutral: {
           '50': '#FAFAFA',
           '100': '#F5F5F5',
           '200': '#E6E7E8',
@@ -56,7 +64,6 @@ const config: Config = {
           navy: '#0F2060',
         },
       },
-      fontSize: {},
     },
   },
   darkMode: 'class',

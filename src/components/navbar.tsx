@@ -73,7 +73,7 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
               </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden gap-14 sm:flex" justify="center">
+            <NavbarContent className="mx-auto hidden gap-14 sm:flex" justify="center">
               {navbarItems.map((item, index) => (
                 <NavbarItem key={`${item}-${index}`}>
                   <Link
@@ -84,17 +84,6 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
                   </Link>
                 </NavbarItem>
               ))}
-              <NavbarItem>
-                <Button
-                  as={Link}
-                  className="flex bg-primary-500 px-4 py-[9.5px] font-medium text-white md:hidden"
-                  href="#"
-                  variant="flat"
-                  endContent={<ChevronRightIcon size={20} />}
-                >
-                  Sign In
-                </Button>
-              </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
               <NavbarItem>
@@ -117,6 +106,17 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
                   </Link>
                 </NavbarMenuItem>
               ))}
+              <NavbarMenuItem>
+                <Button
+                  as={Link}
+                  className="hidden bg-primary-500 px-4 py-[9.5px] font-medium text-white md:flex"
+                  href="#"
+                  variant="flat"
+                  endContent={<ChevronRightIcon size={20} />}
+                >
+                  Sign In
+                </Button>
+              </NavbarMenuItem>
             </NavbarMenu>
             <NavbarMenuToggle aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} className="sm:hidden" />
           </Navbar>

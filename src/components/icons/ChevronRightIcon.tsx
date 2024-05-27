@@ -1,4 +1,4 @@
-import { TIconsProps } from '@/types/icon';
+import { TIconsProps } from '@/types/TIcon';
 import React, { FC } from 'react';
 
 const ChevronRightIcon: FC<TIconsProps> = ({ fill = 'currentColor', size, height, width }) => {

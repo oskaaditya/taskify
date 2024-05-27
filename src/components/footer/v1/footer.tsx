@@ -3,7 +3,7 @@
 import React from 'react';
 import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link } from '@nextui-org/react';
 import { languageLists, linksFooterBottom, linksFooterTop } from '@/app/constants';
-import { LinksProps } from '@/types/link';
+import { LinksProps } from '@/types/TLinks';
 import ReactCountryFlag from 'react-country-flag';
 import FacebookIcon from '@/components/icons/FacebookIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
