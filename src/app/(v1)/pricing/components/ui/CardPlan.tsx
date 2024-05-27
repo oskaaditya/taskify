@@ -1,9 +1,9 @@
 import CheckList from '@/components/icons/CheckList';
 import { TPlan } from '@/types/TPricing';
 import { Button } from '@nextui-org/react';
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
+import { BackgroundPlanEnterprisePattern } from './Background';
 
 interface ICardPlan {
   data: TPlan[];
@@ -16,20 +16,9 @@ const CardPlan: FC<ICardPlan> = ({ data }) => {
         <div key={plan.id} className="space-y-4">
           {/* Card Top */}
           <div
-            className={`relative flex flex-col gap-8 rounded-2xl border border-neutral-200 px-6 pb-4 pt-6 ${plan.id === 3 && 'bg-primary-600'}`}
+            className={`relative flex flex-col gap-8 overflow-hidden rounded-2xl border border-neutral-200 px-6 pb-4 pt-6 ${plan.id === 3 && 'bg-primary-600'}`}
           >
-            {plan.id === 3 && (
-              <Image
-                quality={100}
-                fill
-                style={{
-                  objectFit: 'cover',
-                }}
-                alt="Cta-pattern"
-                src=" https://res.cloudinary.com/diuj6zd9p/image/upload/v1716549552/taskify/assets/images/enterprice-plan-bg.png"
-                className="absolute z-0"
-              />
-            )}
+            {plan.id === 3 && <BackgroundPlanEnterprisePattern />}
             <h4
               className={`text-xl font-medium text-neutral-600 md:text-h4 ${plan.id === 2 && 'text-primary-500'} ${plan.id === 3 && 'text-white'}`}
             >
