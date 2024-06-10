@@ -7,10 +7,6 @@ import React, { FC } from 'react';
 import SocialMediaLinks from './SocialMediaLinks';
 import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
 import InstgramIcon from '@/components/icons/InstagramIcon';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
 import Slider from './Slider';
 
 interface ITeams {

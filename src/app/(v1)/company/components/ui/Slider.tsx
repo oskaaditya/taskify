@@ -10,6 +10,10 @@ import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
 import InstgramIcon from '@/components/icons/InstagramIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 interface ISliderTeams {
   data: TTeamsCompany[];
 }
@@ -46,7 +50,7 @@ const Slider: FC<ISliderTeams> = ({ data }) => {
                 <p className="text-2xl font-medium text-neutral-600">{item.name}</p>
                 <p className="font-medium text-neutral-600">{item.position}</p>
               </div>
-              <p className="mb-8 text-lg text-neutral-500">{item.description}</p>
+              <p className="mb-8 text-sm text-neutral-500 md:text-lg">{item.description}</p>
               <div className="flex items-center gap-2">
                 {item.socialMedia.linkedin && (
                   <SocialMediaLinks link={item.socialMedia.linkedin} icon={<LinkedinIcon />} />
