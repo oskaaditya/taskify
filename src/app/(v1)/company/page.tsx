@@ -1,16 +1,18 @@
 import React from 'react';
-import PlanSection from './components/PlanSection';
 import HeroSection from './components/HeroSection';
+import WhyUsSection from './components/WhyUsSection';
+import TeamSection from './components/TeamSection';
 import FaqSection from './components/FaqSection';
 
-const PricingPage = () => {
+const CompanyPage = () => {
   return (
     <>
       <HeroSection />
-      <PlanSection />
+      <WhyUsSection />
+      <TeamSection />
       <FaqSection />
     </>
   );
 };
 
-export default PricingPage;
+export default CompanyPage;

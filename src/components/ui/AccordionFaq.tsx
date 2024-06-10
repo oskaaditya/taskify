@@ -16,7 +16,7 @@ const AccordionFaq: FC<IAccordion> = ({ data }) => {
     title: 'font-medium text-lg md:text-2xl text-neutral-600 py-0',
     trigger: 'md:px-6 py-0 bg-transparent rounded-lg flex items-center',
     indicator: 'text-neutral-600',
-    content: `md:px-6 text-lg text-neutral-500 max-w-[984px] pt-6 pb-0`,
+    content: `md:px-6 text-base md:text-lg text-neutral-500 max-w-[984px] pt-6 pb-0`,
   };
 
   return (

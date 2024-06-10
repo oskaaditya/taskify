@@ -64,6 +64,10 @@ const config: Config = {
           navy: '#0F2060',
         },
       },
+      backgroundImage: {
+        'company-hero':
+          "url('https://res.cloudinary.com/diuj6zd9p/image/upload/v1716795755/taskify/assets/images/company-hero-bg.jpg')",
+      },
     },
   },
   darkMode: 'class',
