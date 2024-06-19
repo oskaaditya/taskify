@@ -1,6 +1,6 @@
 import React from 'react';
 import AccordionFaq from '../../../../components/ui/AccordionFaq';
-import { faqPricingLists } from '@/app/constants';
+import { faqCompanyLists } from '@/app/constants';
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 import ChevronRightIcon from '@/components/icons/ChevronRightIcon';
@@ -18,7 +18,7 @@ const FaqSection = () => {
               got you covered.
             </p>
           </div>
-          <AccordionFaq data={faqPricingLists} />
+          <AccordionFaq data={faqCompanyLists} />
           <Button
             as={Link}
             className="mx-auto flex h-auto w-fit bg-primary-500 px-8 py-[13px] text-lg font-medium text-white"
