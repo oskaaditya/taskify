@@ -7,7 +7,7 @@ import ChevronRightIcon from '@/components/icons/ChevronRightIcon';
 
 const TeamSection = () => {
   return (
-    <section className=" relative overflow-hidden px-5 py-14 md:py-[124.5px] xl:p-20">
+    <section className="relative overflow-hidden px-5 py-14 md:py-[124.5px] xl:p-20">
       <div className="container mx-auto">
         <div className="space-y-14">
           <div className="mx-auto max-w-[584px] space-y-4 text-center">
