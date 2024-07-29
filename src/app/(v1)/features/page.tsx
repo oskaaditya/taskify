@@ -1,11 +1,16 @@
 import React from 'react';
+import HeroSection from './components/HeroSection';
+import Highlights from './components/Highlights';
+import FeaturesSection from './components/FeaturesSection';
+import SystemSection from './components/SystemSection';
 
 const Features = () => {
   return (
     <>
-      <section className="h-screen">
-        <div className="container mx-auto">Features Page</div>
-      </section>
+      <HeroSection />
+      <Highlights />
+      <FeaturesSection />
+      <SystemSection />
     </>
   );
 };

@@ -1,6 +1,9 @@
 import React from 'react';
 import Teams from './ui/Teams';
 import { teamsList } from '@/app/constants';
+import { Button } from '@nextui-org/react';
+import ChevronRightIcon from '@/components/icons/ChevronRightIcon';
+import Link from 'next/link';
 
 const TeamSection = () => {
   return (
@@ -16,6 +19,15 @@ const TeamSection = () => {
             </p>
           </div>
           <Teams data={teamsList} />
+          <Button
+            as={Link}
+            className="mx-auto flex h-auto w-fit bg-primary-500 px-8 py-[13px] text-lg font-medium text-white"
+            href="#"
+            variant="flat"
+            endContent={<ChevronRightIcon size={20} />}
+          >
+            See more
+          </Button>
         </div>
       </div>
     </section>

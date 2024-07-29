@@ -1,4 +1,5 @@
 import { TTeamsCompany } from '@/types/TCompany';
+import { TFeatures } from '@/types/TFeatures';
 import { FooterLinks, LinksProps } from '@/types/TLinks';
 import { TNations } from '@/types/TNation';
 import { TFaq, TPlan } from '@/types/TPricing';
@@ -308,5 +309,32 @@ export const teamsList: Array<TTeamsCompany> = [
       linkedin: 'https://www.linkedin.com',
       twitter: 'https://www.x.com',
     },
+  },
+];
+
+export const featuresList: Array<TFeatures> = [
+  {
+    id: 1,
+    title: 'Effortless Task Juggling',
+    description:
+      "Streamline Your To-Do's. Taskify’s effortlessly organizes your tasks, prioritizes them, and sets deadlines—all with a few clicks. It's like having a personal assistant who knows your schedule inside and out.",
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-1.png',
+  },
+  {
+    id: 2,
+    title: 'Collaborate Like Never Before',
+    description:
+      'Taskify’s collaboration tools make teamwork a breeze. Share tasks, track progress, and celebrate victories with ease, ensuring everyone stays on the same page.',
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-1.png',
+  },
+  {
+    id: 3,
+    title: 'Customize Your Workspace',
+    description:
+      "With Taskify, customize your workspace to fit your workflow perfectly. Drag, drop, and personalize your tools to create a workspace that's uniquely yours.",
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png',
   },
 ];
