@@ -1,7 +1,7 @@
-import { TIconsProps } from '@/types/TIcon';
+import { IconsProps } from '@/interfaces/IIcon';
 import { FC } from 'react';
 
-const InstgramIcon: FC<TIconsProps> = ({ fill = 'currentColor', size, height, width }) => {
+const InstgramIcon: FC<IconsProps> = ({ fill = 'currentColor', size, height, width }) => {
   return (
     <svg
       width={size || width || 24}

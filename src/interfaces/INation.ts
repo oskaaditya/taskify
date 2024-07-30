@@ -1,4 +1,4 @@
-export type TNations = {
+export interface INations {
   name: string;
   countryCode: string;
-};
+}

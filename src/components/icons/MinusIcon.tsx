@@ -1,7 +1,7 @@
-import { TIconsProps } from '@/types/TIcon';
+import { IconsProps } from '@/interfaces/IIcon';
 import { FC } from 'react';
 
-const MinusIcon: FC<TIconsProps> = ({ fill = 'currentColor', size, height, width }) => {
+const MinusIcon: FC<IconsProps> = ({ fill = 'currentColor', size, height, width }) => {
   return (
     <svg
       width={size || width || 24}

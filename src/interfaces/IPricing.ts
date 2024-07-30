@@ -1,16 +1,16 @@
-type TPlanFeature = {
+interface IPlanFeature {
   name: string;
-};
+}
 
-export type TPlan = {
+export interface IPlan {
   id: number;
   name: string;
   price: string;
   description: string;
-  features: TPlanFeature[];
-};
+  features: IPlanFeature[];
+}
 
-export type TFaq = {
+export interface IFaq {
   title: string;
   description: string;
-};
+}

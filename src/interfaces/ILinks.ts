@@ -1,10 +1,10 @@
-export type LinksProps = {
+export interface LinksProps {
   url: string;
   name: string;
   icon?: React.ReactNode;
-};
+}
 
-export type FooterLinks = {
+export interface FooterLinks {
   title: string;
   links: LinksProps[];
-};
+}

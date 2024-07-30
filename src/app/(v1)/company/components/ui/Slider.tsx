@@ -3,7 +3,7 @@ import ArrowRightIcon from '@/components/icons/ArrowRightIcon';
 import InstgramIcon from '@/components/icons/InstagramIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
-import { TTeamsCompany } from '@/types/TCompany';
+import { ITeamsCompany } from '@/interfaces/ICompany';
 import { Button, Image } from '@nextui-org/react';
 import { FC } from 'react';
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -15,7 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 interface ISliderTeams {
-  data: TTeamsCompany[];
+  data: ITeamsCompany[];
 }
 
 const Slider: FC<ISliderTeams> = ({ data }) => {

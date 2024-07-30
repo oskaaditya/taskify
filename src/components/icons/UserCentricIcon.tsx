@@ -1,7 +1,7 @@
-import { TIconsProps } from '@/types/TIcon';
+import { IconsProps } from '@/interfaces/IIcon';
 import { FC } from 'react';
 
-const UserCentricIcon: FC<TIconsProps> = ({ fill = 'currentColor', size, height, width }) => {
+const UserCentricIcon: FC<IconsProps> = ({ fill = 'currentColor', size, height, width }) => {
   return (
     <svg
       width={size || width || 48}

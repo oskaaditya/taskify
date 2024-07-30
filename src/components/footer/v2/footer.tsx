@@ -6,7 +6,7 @@ import FacebookIcon from '@/components/icons/FacebookIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import TwitterIcon from '@/components/icons/TwitterIcon';
 import Logo from '@/components/logo';
-import { LinksProps } from '@/types/TLinks';
+import { LinksProps } from '@/interfaces/ILinks';
 import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link } from '@nextui-org/react';
 import ReactCountryFlag from 'react-country-flag';
 

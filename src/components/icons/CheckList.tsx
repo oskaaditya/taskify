@@ -1,7 +1,7 @@
-import { TIconsProps } from '@/types/TIcon';
+import { IconsProps } from '@/interfaces/IIcon';
 import { FC } from 'react';
 
-interface ICheckList extends TIconsProps {
+interface ICheckList extends IconsProps {
   active: boolean;
 }
 

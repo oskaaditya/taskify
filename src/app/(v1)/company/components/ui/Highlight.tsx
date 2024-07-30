@@ -1,12 +1,12 @@
 import CraftmanShipIcon from '@/components/icons/CraftmanshipIcon';
 import InnovationIcon from '@/components/icons/InnovationIcon';
 import UserCentricIcon from '@/components/icons/UserCentricIcon';
-import { TCompanyHiglight } from '@/types/TCompany';
+import { ICompanyHiglight } from '@/interfaces/ICompany';
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 
 const Highlight = () => {
-  const highlightLists: Array<TCompanyHiglight> = [
+  const highlightLists: Array<ICompanyHiglight> = [
     {
       icon: <CraftmanShipIcon />,
       title: 'Expert Craftmanship',

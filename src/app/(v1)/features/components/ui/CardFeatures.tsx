@@ -1,9 +1,9 @@
-import { TFeatures } from '@/types/TFeatures';
+import { IFeatures } from '@/interfaces/IFeatures';
 import { cn } from '@/utils/utils';
 import Image from 'next/image';
 import { FC } from 'react';
 
-const CardFeatures: FC<TFeatures> = ({ id, title, image, description }) => {
+const CardFeatures: FC<IFeatures> = ({ id, title, image, description }) => {
   return (
     <div
       className={cn(

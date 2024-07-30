@@ -1,10 +1,10 @@
-import { TTeamsCompany } from '@/types/TCompany';
-import { TFeatures } from '@/types/TFeatures';
-import { FooterLinks, LinksProps } from '@/types/TLinks';
-import { TNations } from '@/types/TNation';
-import { TFaq, TPlan } from '@/types/TPricing';
+import { ITeamsCompany } from '@/interfaces/ICompany';
+import { IFeatures } from '@/interfaces/IFeatures';
+import { FooterLinks, LinksProps } from '@/interfaces/ILinks';
+import { INations } from '@/interfaces/INation';
+import { IFaq, IPlan } from '@/interfaces/IPricing';
 
-export const navbarItems: Array<LinksProps> = [
+export const navbarItems: LinksProps[] = [
   {
     url: '/features',
     name: 'Features',
@@ -19,7 +19,7 @@ export const navbarItems: Array<LinksProps> = [
   },
 ];
 
-export const linksFooterBottom: Array<LinksProps> = [
+export const linksFooterBottom: LinksProps[] = [
   {
     url: '#',
     name: 'Privacy',
@@ -34,7 +34,7 @@ export const linksFooterBottom: Array<LinksProps> = [
   },
 ];
 
-export const linksFooterTop: Array<FooterLinks> = [
+export const linksFooterTop: FooterLinks[] = [
   {
     title: 'Platform',
     links: [
@@ -92,7 +92,7 @@ export const linksFooterTop: Array<FooterLinks> = [
   },
 ];
 
-export const languageLists: Array<TNations> = [
+export const languageLists: INations[] = [
   {
     name: 'English',
     countryCode: 'GB',
@@ -107,7 +107,7 @@ export const languageLists: Array<TNations> = [
   },
 ];
 
-export const pricingPlanList: Array<TPlan> = [
+export const pricingPlanList: IPlan[] = [
   {
     id: 1,
     name: 'Startup Plan',
@@ -179,7 +179,7 @@ export const pricingPlanList: Array<TPlan> = [
   },
 ];
 
-export const faqPricingLists: Array<TFaq> = [
+export const faqPricingLists: IFaq[] = [
   {
     title: "Can I customize my workspace according to my team's specific needs?",
     description:
@@ -226,7 +226,7 @@ export const faqPricingLists: Array<TFaq> = [
       'Absolutely! Our platform lets you tailor your workspace to fit your team perfectly. From organizing tasks to setting up project boards, you have the flexibility to create an environment that suits your workflow like a glove.',
   },
 ];
-export const faqCompanyLists: Array<TFaq> = [
+export const faqCompanyLists: IFaq[] = [
   {
     title: 'What are the key features of your product?',
     description:
@@ -274,7 +274,7 @@ export const faqCompanyLists: Array<TFaq> = [
   },
 ];
 
-export const teamsList: Array<TTeamsCompany> = [
+export const teamsList: ITeamsCompany[] = [
   {
     name: 'Rudy Bosman',
     position: 'Founder of Taskify',
@@ -312,7 +312,7 @@ export const teamsList: Array<TTeamsCompany> = [
   },
 ];
 
-export const featuresList: Array<TFeatures> = [
+export const featuresList: IFeatures[] = [
   {
     id: 1,
     title: 'Effortless Task Juggling',

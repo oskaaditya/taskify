@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
 
-export type TCompanyHiglight = {
+export interface ICompanyHiglight {
   icon: ReactNode;
   title: string;
   description: string;
-};
+}
 
-export type TTeamsCompany = {
+export interface ITeamsCompany {
   name: string;
   position: string;
   description: string;
@@ -16,4 +16,4 @@ export type TTeamsCompany = {
     instagram?: string;
     twitter?: string;
   };
-};
+}

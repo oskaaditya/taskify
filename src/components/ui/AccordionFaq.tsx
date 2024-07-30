@@ -2,12 +2,12 @@
 
 import MinusIcon from '@/components/icons/MinusIcon';
 import PlusIcon from '@/components/icons/PlusIcon';
-import { TFaq } from '@/types/TPricing';
+import { IFaq } from '@/interfaces/IPricing';
 import { Accordion, AccordionItem } from '@nextui-org/react';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 interface IAccordion {
-  data: TFaq[];
+  data: IFaq[];
 }
 
 const AccordionFaq: FC<IAccordion> = ({ data }) => {

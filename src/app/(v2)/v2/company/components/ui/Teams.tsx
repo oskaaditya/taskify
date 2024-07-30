@@ -3,14 +3,14 @@
 import InstgramIcon from '@/components/icons/InstagramIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
-import { TTeamsCompany } from '@/types/TCompany';
+import { ITeamsCompany } from '@/interfaces/ICompany';
 import { Image } from '@nextui-org/react';
 import { FC } from 'react';
 import SliderV2 from './Slider';
 import SocialMediaLinks from './SocialMediaLinks';
 
 interface ITeams {
-  data: TTeamsCompany[];
+  data: ITeamsCompany[];
 }
 
 const Teams: FC<ITeams> = ({ data }) => {

@@ -1,12 +1,12 @@
 import CheckList from '@/components/icons/CheckList';
-import { TPlan } from '@/types/TPricing';
+import { IPlan } from '@/interfaces/IPricing';
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 import { FC } from 'react';
 import { BackgroundPlanEnterprisePattern } from './Background';
 
 interface ICardPlan {
-  data: TPlan[];
+  data: IPlan[];
 }
 
 const CardPlan: FC<ICardPlan> = ({ data }) => {
