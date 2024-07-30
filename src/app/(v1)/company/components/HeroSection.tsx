@@ -1,13 +1,12 @@
 import { Button, Image } from '@nextui-org/react';
 import Link from 'next/link';
-import React from 'react';
 import { BackgroundHero } from './ui/Background';
 
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-white pt-14 md:px-5 md:py-[124.5px] xl:p-[186.5px]">
       <BackgroundHero />
-      <div className="bg-company-hero absolute right-0 top-0 order-last hidden object-cover md:block md:h-full md:w-4/12 md:bg-left-bottom xl:w-5/12" />
+      <div className="absolute right-0 top-0 order-last hidden bg-company-hero object-cover md:block md:h-full md:w-4/12 md:bg-left-bottom xl:w-5/12" />
       <div className="container mx-auto">
         <div className="mb-8 max-w-[584px] space-y-4 px-5 md:mx-8 md:mb-0">
           <h1 className="text-[28px] font-medium md:text-h1">Taskify help upgrade your company</h1>

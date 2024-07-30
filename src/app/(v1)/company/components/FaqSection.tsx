@@ -1,9 +1,8 @@
-import React from 'react';
-import AccordionFaq from '../../../../components/ui/AccordionFaq';
 import { faqCompanyLists } from '@/app/constants';
+import ChevronRightIcon from '@/components/icons/ChevronRightIcon';
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
-import ChevronRightIcon from '@/components/icons/ChevronRightIcon';
+import AccordionFaq from '../../../../components/ui/AccordionFaq';
 
 const FaqSection = () => {
   return (

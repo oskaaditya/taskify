@@ -1,5 +1,5 @@
 import { TIconsProps } from '@/types/TIcon';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const MinusIcon: FC<TIconsProps> = ({ fill = 'currentColor', size, height, width }) => {
   return (

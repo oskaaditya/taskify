@@ -2,7 +2,7 @@ import CheckList from '@/components/icons/CheckList';
 import { TPlan } from '@/types/TPricing';
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { BackgroundPlanEnterprisePattern } from './Background';
 
 interface ICardPlan {

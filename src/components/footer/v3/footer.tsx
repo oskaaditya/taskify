@@ -1,13 +1,12 @@
 'use client';
 
-import React from 'react';
-import { Link } from '@nextui-org/react';
 import { linksFooterBottom, linksFooterTop } from '@/app/constants';
-import { LinksProps } from '@/types/TLinks';
 import FacebookIcon from '@/components/icons/FacebookIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import TwitterIcon from '@/components/icons/TwitterIcon';
 import Logo from '@/components/logo';
+import { LinksProps } from '@/types/TLinks';
+import { Link } from '@nextui-org/react';
 
 const Footer = () => {
   const socialMediaLink: Array<LinksProps> = [

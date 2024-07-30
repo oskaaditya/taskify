@@ -1,4 +1,3 @@
-import React from 'react';
 import { BackgroundHeroPattern } from './ui/Background';
 
 const HeroSection = () => {

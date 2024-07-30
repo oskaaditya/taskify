@@ -1,5 +1,4 @@
 import { pricingPlanList } from '@/app/constants';
-import React from 'react';
 import CardPlan from './ui/CardPlan';
 
 const PlanSection = () => {

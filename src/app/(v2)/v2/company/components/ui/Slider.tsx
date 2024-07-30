@@ -1,14 +1,14 @@
+import ArrowLeftIcon from '@/components/icons/ArrowLeftIcon';
+import ArrowRightIcon from '@/components/icons/ArrowRightIcon';
+import InstgramIcon from '@/components/icons/InstagramIcon';
+import LinkedinIcon from '@/components/icons/LinkedinIcon';
+import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
 import { TTeamsCompany } from '@/types/TCompany';
 import { Button, Image } from '@nextui-org/react';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import SocialMediaLinks from './SocialMediaLinks';
-import ArrowLeftIcon from '@/components/icons/ArrowLeftIcon';
-import ArrowRightIcon from '@/components/icons/ArrowRightIcon';
-import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
-import InstgramIcon from '@/components/icons/InstagramIcon';
-import LinkedinIcon from '@/components/icons/LinkedinIcon';
 
 // Import Swiper styles
 import 'swiper/css';

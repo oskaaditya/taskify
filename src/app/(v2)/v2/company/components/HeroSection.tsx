@@ -1,6 +1,5 @@
 import { Button, Image } from '@nextui-org/react';
 import Link from 'next/link';
-import React from 'react';
 import { BackgroundHero } from './ui/Background';
 
 const HeroSection = () => {

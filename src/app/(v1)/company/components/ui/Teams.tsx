@@ -1,13 +1,13 @@
 'use client';
 
+import InstgramIcon from '@/components/icons/InstagramIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
+import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
 import { TTeamsCompany } from '@/types/TCompany';
 import { Image } from '@nextui-org/react';
-import React, { FC } from 'react';
-import SocialMediaLinks from './SocialMediaLinks';
-import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
-import InstgramIcon from '@/components/icons/InstagramIcon';
+import { FC } from 'react';
 import Slider from './Slider';
+import SocialMediaLinks from './SocialMediaLinks';
 
 interface ITeams {
   data: TTeamsCompany[];

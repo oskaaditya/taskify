@@ -1,7 +1,7 @@
 import { TFeatures } from '@/types/TFeatures';
 import { cn } from '@/utils/utils';
 import Image from 'next/image';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const CardFeatures: FC<TFeatures> = ({ id, title, image, description }) => {
   return (

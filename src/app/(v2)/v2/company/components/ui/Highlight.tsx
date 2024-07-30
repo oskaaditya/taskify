@@ -4,7 +4,6 @@ import UserCentricIcon from '@/components/icons/UserCentricIcon';
 import { TCompanyHiglight } from '@/types/TCompany';
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
-import React from 'react';
 
 const Highlight = () => {
   const highlightLists: Array<TCompanyHiglight> = [

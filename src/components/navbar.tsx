@@ -1,5 +1,6 @@
 'use client';
 
+import { navbarItems } from '@/app/constants';
 import {
   Button,
   Link,
@@ -11,13 +12,12 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from '@nextui-org/react';
-import React, { FC, useState } from 'react';
-import Logo from './logo';
+import { usePathname } from 'next/navigation';
+import { FC, useState } from 'react';
 import ArrowRightIcon from './icons/ArrowRightIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 import CloseIcon from './icons/CloseIcon';
-import { navbarItems } from '@/app/constants';
-import { usePathname } from 'next/navigation';
+import Logo from './logo';
 
 interface INavbar {
   showBanner: boolean;

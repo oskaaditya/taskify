@@ -1,5 +1,4 @@
 import { featuresList } from '@/app/constants';
-import React from 'react';
 import CardFeatures from './ui/CardFeatures';
 
 const FeaturesSection = () => {

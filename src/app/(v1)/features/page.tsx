@@ -1,7 +1,6 @@
-import React from 'react';
+import FeaturesSection from './components/FeaturesSection';
 import HeroSection from './components/HeroSection';
 import Highlights from './components/Highlights';
-import FeaturesSection from './components/FeaturesSection';
 import SystemSection from './components/SystemSection';
 
 const Features = () => {

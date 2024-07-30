@@ -1,5 +1,5 @@
 import { TIconsProps } from '@/types/TIcon';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 interface ICheckList extends TIconsProps {
   active: boolean;

@@ -1,6 +1,5 @@
-import React from 'react';
-import Highlight from './ui/Highlight';
 import { BackgroundHiglight } from './ui/Background';
+import Highlight from './ui/Highlight';
 
 const WhyUsSection = () => {
   return (

@@ -1,7 +1,6 @@
-import React from 'react';
+import FaqSection from './components/FaqSection';
 import HeroSection from './components/HeroSection';
 import TeamSection from './components/TeamSection';
-import FaqSection from './components/FaqSection';
 
 const CompanyPage = () => {
   return (

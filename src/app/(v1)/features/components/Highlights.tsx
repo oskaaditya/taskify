@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface IHightlights {
   total: number;
   title: string;

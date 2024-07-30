@@ -1,7 +1,6 @@
-import React from 'react';
-import PlanSection from './components/PlanSection';
-import HeroSection from './components/HeroSection';
 import FaqSection from './components/FaqSection';
+import HeroSection from './components/HeroSection';
+import PlanSection from './components/PlanSection';
 
 const PricingPage = () => {
   return (

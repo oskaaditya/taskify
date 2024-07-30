@@ -1,4 +1,3 @@
-import React from 'react';
 import { faqCompanyLists } from '@/app/constants';
 import AccordionFaq from '@/components/ui/AccordionFaq';
 

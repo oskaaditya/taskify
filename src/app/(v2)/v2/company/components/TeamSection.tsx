@@ -1,9 +1,8 @@
-import React from 'react';
-import Teams from './ui/Teams';
 import { teamsList } from '@/app/constants';
-import { Button } from '@nextui-org/react';
 import ChevronRightIcon from '@/components/icons/ChevronRightIcon';
+import { Button } from '@nextui-org/react';
 import Link from 'next/link';
+import Teams from './ui/Teams';
 
 const TeamSection = () => {
   return (

@@ -1,15 +1,14 @@
 'use client';
 
-import React from 'react';
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link } from '@nextui-org/react';
 import { languageLists, linksFooterBottom, linksFooterTop } from '@/app/constants';
-import { LinksProps } from '@/types/TLinks';
-import ReactCountryFlag from 'react-country-flag';
+import ChevronDownIcon from '@/components/icons/ChevronDownIcon';
 import FacebookIcon from '@/components/icons/FacebookIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import TwitterIcon from '@/components/icons/TwitterIcon';
 import Logo from '@/components/logo';
-import ChevronDownIcon from '@/components/icons/ChevronDownIcon';
+import { LinksProps } from '@/types/TLinks';
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link } from '@nextui-org/react';
+import ReactCountryFlag from 'react-country-flag';
 
 const Footer = () => {
   const socialMediaLink: Array<LinksProps> = [

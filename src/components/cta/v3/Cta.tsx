@@ -1,7 +1,6 @@
 import { Button } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { desc, tag, title } from '../constants';
 
 const Cta = () => {
