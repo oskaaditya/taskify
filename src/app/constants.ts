@@ -233,44 +233,44 @@ export const faqCompanyLists: IFaq[] = [
       'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
   },
   {
-    title: 'How can I sign up for your service',
+    title: 'How can I sign up for your service?',
     description:
-      'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
+      'Signing up is easy! Just click the "Get Started" button on our website, choose a plan that suits your needs, and follow the simple registration process.',
   },
   {
     title: "Can I customize the software to fit my company's specific needs?",
     description:
-      'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
+      "Absolutely! Our software is highly customizable, allowing you to tailor workflows, tasks, and tools to perfectly match your team's unique processes.",
   },
   {
     title: 'Is technical support available, and how can I access it',
     description:
-      'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
+      'Yes, we offer comprehensive technical support. You can reach our support team 24/7 via chat, email, or phone. We’re here to help with any issues or questions you may have.',
   },
   {
     title: 'Do you offer a free trial period?',
     description:
-      'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
+      'Yes, we offer a 14-day free trial so you can explore all the features and see how our product fits your needs before committing.',
   },
   {
     title: 'How secure is my data on your platform?',
     description:
-      'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
+      'OYour data security is our top priority. We use industry-leading encryption and security protocols to ensure that your information is always protected.',
   },
   {
     title: 'Can I integrate your product with other tools we already use?',
     description:
-      'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
+      'Yes, our product seamlessly integrates with a wide range of popular tools, including Slack, Trello, and Google Workspace. This ensures a smooth workflow across all your platforms.',
   },
   {
     title: 'What training or resources do you provide for new users?',
     description:
-      'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
+      'We offer a variety of resources to help you get started, including onboarding guides, video tutorials, and webinars. Our support team is also available to provide personalized assistance.',
   },
   {
     title: 'How can I upgrade or downgrade my subscription plan?',
     description:
-      'Our product boasts a range of key features designed to streamline task management, enhance collaboration, and boost productivity. Some highlights include intuitive task organization, real-time collaboration tools, customizable workflows, deadline reminders, and seamless integration capabilities.',
+      'Upgrading or downgrading your subscription is simple. Just log in to your account, go to the billing section, and select the plan that best fits your current needs.',
   },
 ];
 
