@@ -8,6 +8,20 @@ export const navbarItems: LinksProps[] = [
   {
     url: '/features',
     name: 'Features',
+    submenu: [
+      {
+        name: 'Features V1',
+        url: '/features',
+      },
+      {
+        name: 'Features V2',
+        url: '/v2/features',
+      },
+      {
+        name: 'Features V3',
+        url: '/v3/features',
+      },
+    ],
   },
   {
     url: '/pricing',
@@ -16,6 +30,16 @@ export const navbarItems: LinksProps[] = [
   {
     url: '/company',
     name: 'Company',
+    submenu: [
+      {
+        name: 'Company V1',
+        url: '/company',
+      },
+      {
+        name: 'Company V2',
+        url: '/v2/company',
+      },
+    ],
   },
 ];
 

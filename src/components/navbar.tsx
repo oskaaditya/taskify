@@ -3,6 +3,10 @@
 import { navbarItems } from '@/app/constants';
 import {
   Button,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
   Link,
   Navbar,
   NavbarBrand,
@@ -74,16 +78,54 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
             </NavbarContent>
 
             <NavbarContent className="mx-auto hidden gap-14 sm:flex" justify="center">
-              {navbarItems.map((item, index) => (
-                <NavbarItem key={`${item}-${index}`}>
-                  <Link
-                    className={`w-full ${pathname === item.url ? 'font-bold text-primary-500' : 'text-neutral-600'} `}
-                    href={item.url}
-                  >
-                    {item.name}
-                  </Link>
-                </NavbarItem>
-              ))}
+              {navbarItems.map((item, index) =>
+                !item.submenu ? (
+                  <NavbarItem key={`${item}-${index}`}>
+                    <Link
+                      className={`w-full ${pathname === item.url ? 'font-bold text-primary-500' : 'text-neutral-600'} `}
+                      href={item.url}
+                    >
+                      {item.name}
+                    </Link>
+                  </NavbarItem>
+                ) : (
+                  <Dropdown key={`${item}-${index}`}>
+                    <NavbarItem>
+                      <DropdownTrigger>
+                        <Link
+                          className={`w-full ${pathname === item.url ? 'font-bold text-primary-500' : 'text-neutral-600'} `}
+                          href={'#'}
+                        >
+                          {item.name}
+                        </Link>
+                      </DropdownTrigger>
+                    </NavbarItem>
+                    <DropdownMenu
+                      aria-label="ACME features"
+                      className="w-[200px]"
+                      itemClasses={{
+                        base: 'gap-4',
+                      }}
+                    >
+                      {item.submenu.map(
+                        (
+                          submenuItem,
+                          index, // Changed 'item' to 'submenuItem'
+                        ) => (
+                          <DropdownItem key={index}>
+                            <Link
+                              className={`w-full ${pathname === submenuItem.url ? 'font-bold text-primary-500' : 'text-neutral-600'} `}
+                              href={submenuItem.url}
+                            >
+                              {submenuItem.name}
+                            </Link>
+                          </DropdownItem>
+                        ),
+                      )}
+                    </DropdownMenu>
+                  </Dropdown>
+                ),
+              )}
             </NavbarContent>
             <NavbarContent justify="end">
               <NavbarItem>

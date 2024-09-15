@@ -17,7 +17,7 @@ const SystemSection = () => {
             </p>
           </div>
           <div className="flex flex-col items-stretch gap-8 lg:flex-row">
-            <div className="order-last max-w-[379px] space-y-8 lg:order-first">
+            <div className="order-last max-w-[379px] space-y-12 lg:order-first">
               <div className="flex flex-col items-center justify-center gap-10 rounded-2xl bg-additional-navy px-[42.5px] py-[50px] lg:min-h-[460px] lg:py-0">
                 <p className="text-center text-[28px] font-medium leading-[120%] text-white lg:text-[40px]">
                   Integrated task to all division in the company
@@ -55,32 +55,32 @@ const SystemSection = () => {
                 <Image
                   src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722225628/taskify/assets/images/dashboard-mobile.png"
                   alt="dashboard-mobile"
-                  className="absolute -bottom-[250px] mx-auto h-auto max-w-[194px] lg:-top-[250px] lg:right-[72px] lg:max-w-none"
+                  className="absolute -bottom-[250px] left-[20%] mx-auto h-auto max-w-[194px] lg:-top-[250px] lg:left-auto lg:right-[72px] lg:max-w-none"
                   quality={100}
                   width={305}
                   height={535}
                 />
               </div>
               <div className="grid grid-cols-2 gap-8">
-                <div className="flex flex-col items-center justify-center gap-5 overflow-hidden rounded-2xl bg-primary-100 p-6 shadow-sm lg:gap-12 lg:px-[46px] lg:py-[70px]">
+                <div className="flex flex-col items-center justify-center gap-5 overflow-hidden rounded-2xl bg-primary-100 p-6 shadow-sm lg:gap-12 lg:px-[46px] lg:py-[46px]">
                   <AvatarGroup>
                     <Avatar
-                      className="lg:size-[60px]"
+                      className="h-16 w-16"
                       radius="full"
                       src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722227022/taskify/assets/images/avatar-1.png"
                     />
                     <Avatar
-                      className="lg:size-[60px]"
+                      className="h-16 w-16"
                       radius="full"
                       src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722227022/taskify/assets/images/avatar-2.png"
                     />
                     <Avatar
-                      className="lg:size-[60px]"
+                      className="h-16 w-16"
                       radius="full"
                       src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722227022/taskify/assets/images/avatar-3.png"
                     />
                     <Avatar
-                      className="lg:size-[60px]"
+                      className="h-16 w-16"
                       radius="full"
                       src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722227022/taskify/assets/images/plus-ava.png"
                     />
