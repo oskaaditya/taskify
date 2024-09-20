@@ -3,6 +3,7 @@ import ChevronRightIcon from '@/components/icons/ChevronRightIcon';
 import { Avatar, AvatarGroup, Button } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BackgroundIntegrated } from './ui/Background';
 
 const SystemSection = () => {
   return (
@@ -18,7 +19,7 @@ const SystemSection = () => {
           </div>
           <div className="flex flex-col items-stretch gap-8 lg:flex-row">
             <div className="order-last max-w-[379px] space-y-12 lg:order-first">
-              <div className="flex flex-col items-center justify-center gap-10 rounded-2xl bg-additional-navy px-[42.5px] py-[50px] lg:min-h-[460px] lg:py-0">
+              <div className="relative flex flex-col items-center justify-center gap-10 rounded-2xl bg-additional-navy px-[42.5px] py-[50px] lg:min-h-[460px] lg:py-0">
                 <p className="text-center text-[28px] font-medium leading-[120%] text-white lg:text-[40px]">
                   Integrated task to all division in the company
                 </p>
@@ -31,6 +32,7 @@ const SystemSection = () => {
                 >
                   Try Now
                 </Button>
+                <BackgroundIntegrated />
               </div>
               <div className="hidden items-center justify-center gap-[21px] rounded-2xl bg-primary-100 px-12 py-[58px] shadow-sm lg:flex">
                 <div className="flex size-[60px] items-center justify-center rounded-xl border-2 border-[#E3E8F1] bg-white p-2.5 text-primary-500">
@@ -65,22 +67,22 @@ const SystemSection = () => {
                 <div className="flex flex-col items-center justify-center gap-5 overflow-hidden rounded-2xl bg-primary-100 p-6 shadow-sm lg:gap-12 lg:px-[46px] lg:py-[46px]">
                   <AvatarGroup>
                     <Avatar
-                      className="h-16 w-16"
+                      className="h-20 w-20 text-large"
                       radius="full"
                       src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722227022/taskify/assets/images/avatar-1.png"
                     />
                     <Avatar
-                      className="h-16 w-16"
+                      className="h-20 w-20 text-large"
                       radius="full"
                       src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722227022/taskify/assets/images/avatar-2.png"
                     />
                     <Avatar
-                      className="h-16 w-16"
+                      className="h-20 w-20 text-large"
                       radius="full"
                       src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722227022/taskify/assets/images/avatar-3.png"
                     />
                     <Avatar
-                      className="h-16 w-16"
+                      className="h-20 w-20 text-large"
                       radius="full"
                       src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722227022/taskify/assets/images/plus-ava.png"
                     />

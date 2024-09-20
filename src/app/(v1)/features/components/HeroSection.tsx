@@ -1,10 +1,12 @@
 import { Button } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BackgroundHero } from './ui/Background';
 
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-white px-5 pt-14 md:py-[124.5px] xl:py-[144px]">
+      <BackgroundHero />
       <div className="container mx-auto">
         <div className="mb-8 max-w-[584px] space-y-8 md:mx-8 md:mb-0">
           <div className="space-y-4">

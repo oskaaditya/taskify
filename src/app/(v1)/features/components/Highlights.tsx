@@ -1,3 +1,5 @@
+import { BackgroundHiglight } from './ui/Background';
+
 interface IHightlights {
   total: number;
   title: string;
@@ -23,7 +25,8 @@ const highlightList: IHightlights[] = [
 
 const Highlights = () => {
   return (
-    <section className="bg-primary-500 py-14 md:px-5">
+    <section className="relative bg-primary-500 py-14 md:px-5">
+      <BackgroundHiglight />
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-24">
           {highlightList.map((item, index) => (

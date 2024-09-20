@@ -2,8 +2,22 @@ import { IFeatures } from '@/interfaces/IFeatures';
 import { cn } from '@/utils/utils';
 import Image from 'next/image';
 import { FC } from 'react';
+import { BackgroundFirstFeatures, BackgroundSecondFeatures, BackgroundThirdFeatures } from './Background';
 
 const CardFeatures: FC<IFeatures> = ({ id, title, image, description }) => {
+  const renderBackground = (id: number) => {
+    switch (id) {
+      case 1:
+        return <BackgroundFirstFeatures />;
+      case 2:
+        return <BackgroundSecondFeatures />;
+      case 3:
+        return <BackgroundThirdFeatures />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div
       className={cn(
@@ -15,6 +29,7 @@ const CardFeatures: FC<IFeatures> = ({ id, title, image, description }) => {
         },
       )}
     >
+      {renderBackground(id)}
       <div className="space-y-4 px-6 text-center">
         <h2 className="text-[28px] font-medium text-white lg:text-5xl">{title}</h2>
         <p className="mx-auto max-w-[519px] text-sm text-white lg:text-base">{description}</p>
