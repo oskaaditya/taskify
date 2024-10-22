@@ -235,7 +235,7 @@ const HeroTopRight = () => {
 
 const HeroBottomLeft = () => {
   return (
-    <div className="absolute -bottom-[120px] -left-[20%] hidden md:block">
+    <div className="absolute -left-[100%] bottom-0 md:-bottom-[120px] md:-left-[20%]">
       <svg xmlns="http://www.w3.org/2000/svg" width="580" height="207" viewBox="0 0 580 207" fill="none">
         <motion.path
           variants={pathMotion}

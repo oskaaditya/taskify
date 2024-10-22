@@ -1,5 +1,5 @@
 import { ITeamsCompany } from '@/interfaces/ICompany';
-import { IFeatures } from '@/interfaces/IFeatures';
+import { IFeatures, IHightlights } from '@/interfaces/IFeatures';
 import { FooterLinks, LinksProps } from '@/interfaces/ILinks';
 import { INations } from '@/interfaces/INation';
 import { IFaq, IPlan } from '@/interfaces/IPricing';
@@ -360,5 +360,58 @@ export const featuresList: IFeatures[] = [
       "With Taskify, customize your workspace to fit your workflow perfectly. Drag, drop, and personalize your tools to create a workspace that's uniquely yours.",
     image:
       'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png',
+  },
+];
+
+export const productsList: IFeatures[] = [
+  {
+    id: 1,
+    title: 'Task Management',
+    description:
+      "Streamline Your To-Do's. Taskify’s effortlessly organizes your tasks, prioritizes them, and sets deadlines—all with a few clicks. It's like having a personal assistant who knows your schedule inside and out.",
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-1.png',
+  },
+  {
+    id: 2,
+    title: 'Collaborate',
+    description:
+      'Taskify’s collaboration tools make teamwork a breeze. Share tasks, track progress, and celebrate victories with ease, ensuring everyone stays on the same page.',
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-1.png',
+  },
+  {
+    id: 3,
+    title: 'Mobile-Friendly Design',
+    description:
+      "Work Anywhere, Anytime! Taskify’s is designed to be mobile-friendly, so you can manage your tasks on the go. Whether you're on your smartphone or tablet, access Taskify seamlessly from any device and stay productive wherever you are.",
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png',
+  },
+  {
+    id: 4,
+    title: 'Customize Workspace',
+    description:
+      "With Taskify, customize your workspace to fit your workflow perfectly. Drag, drop, and personalize your tools to create a workspace that's uniquely yours.",
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png',
+  },
+];
+
+export const highlightList: IHightlights[] = [
+  {
+    total: 200,
+    title: 'Companies',
+    description: 'using our products',
+  },
+  {
+    total: 100,
+    title: 'Active',
+    description: 'Product Manager',
+  },
+  {
+    total: 4.8,
+    title: 'Rating',
+    description: 'from over 500K users',
   },
 ];

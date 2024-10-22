@@ -48,7 +48,7 @@ const SystemSection = () => {
             </div>
             <div className="order-first flex w-full flex-col gap-[32px] lg:order-last">
               <div className="relative flex h-full items-center gap-[21px] overflow-hidden rounded-2xl bg-primary-100 p-6 shadow-sm lg:px-[72px] lg:py-14">
-                <div className="min-h-[291px] max-w-[288px] space-y-4 text-center lg:min-h-0 lg:text-start">
+                <div className="min-h-[291px] space-y-4 text-center md:max-w-[288px] lg:min-h-0 lg:text-start">
                   <p className="text-xl font-medium leading-[120%] text-primary-500 lg:text-[40px]">Mobile Friendly</p>
                   <p className="text-2xl text-[#546078]">
                     Access your tasks, update progress, and collaborate from any device.
@@ -57,7 +57,7 @@ const SystemSection = () => {
                 <Image
                   src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722225628/taskify/assets/images/dashboard-mobile.png"
                   alt="dashboard-mobile"
-                  className="absolute -bottom-[250px] left-[20%] mx-auto h-auto max-w-[194px] lg:-top-[250px] lg:left-auto lg:right-[72px] lg:max-w-none"
+                  className="absolute -bottom-[200px] left-[24%] mx-auto h-auto max-w-[194px] lg:-top-[250px] lg:left-auto lg:right-[72px] lg:max-w-none"
                   quality={100}
                   width={305}
                   height={535}

@@ -4,3 +4,9 @@ export interface IFeatures {
   description: string;
   image: string;
 }
+
+export interface IHightlights {
+  total: number;
+  title: string;
+  description: string;
+}

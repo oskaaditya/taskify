@@ -39,7 +39,7 @@ const HeroSection = () => {
       <Image
         quality={100}
         alt="dashboard-img"
-        className="-right-[40%] top-20 max-h-[724px] w-auto max-w-[1188px] sm:static sm:h-auto sm:w-full lg:absolute 2xl:-right-1/4"
+        className="-right-[40%] top-20 max-h-[724px] w-auto max-w-none sm:static sm:h-auto sm:w-full md:max-w-[1188px] lg:absolute 2xl:-right-1/4"
         width={4752}
         height={2970}
         src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1718938655/taskify/assets/images/dashboard-features.png"

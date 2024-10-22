@@ -1,27 +1,5 @@
+import { highlightList } from '@/app/constants';
 import { BackgroundHiglight } from './ui/Background';
-
-interface IHightlights {
-  total: number;
-  title: string;
-  description: string;
-}
-const highlightList: IHightlights[] = [
-  {
-    total: 200,
-    title: 'Companies',
-    description: 'using our products',
-  },
-  {
-    total: 100,
-    title: 'Active',
-    description: 'Product Manager',
-  },
-  {
-    total: 4.8,
-    title: 'Rating',
-    description: 'from over 500K users',
-  },
-];
 
 const Highlights = () => {
   return (
