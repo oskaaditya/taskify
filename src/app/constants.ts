@@ -1,5 +1,6 @@
+import { Icons } from '@/components/icons';
 import { ITeamsCompany } from '@/interfaces/ICompany';
-import { IFeatures, IHightlights } from '@/interfaces/IFeatures';
+import { IFeatures, IHightlights, IHightlightsTag } from '@/interfaces/IFeatures';
 import { FooterLinks, LinksProps } from '@/interfaces/ILinks';
 import { INations } from '@/interfaces/INation';
 import { IFaq, IPlan } from '@/interfaces/IPricing';
@@ -413,5 +414,20 @@ export const highlightList: IHightlights[] = [
     total: 4.8,
     title: 'Rating',
     description: 'from over 500K users',
+  },
+];
+
+export const highlightTagList: IHightlightsTag[] = [
+  {
+    Icon: Icons.collab,
+    title: 'Collab',
+  },
+  {
+    Icon: Icons.secure,
+    title: 'Secure',
+  },
+  {
+    Icon: Icons.stars2,
+    title: 'Customable',
   },
 ];
