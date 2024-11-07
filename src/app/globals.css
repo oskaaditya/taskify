@@ -21,3 +21,9 @@ h3 {
 h4 {
   @apply text-h4;
 }
+
+/* Swiper Slider Style */
+.swiper-button-disabled {
+  background-color: #f5f5f5;
+  color: #9fa3a6;
+}

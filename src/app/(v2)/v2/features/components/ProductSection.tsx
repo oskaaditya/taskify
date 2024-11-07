@@ -1,5 +1,6 @@
 import { productsList } from '@/app/constants';
 import CardProducts from './ui/CardProducts';
+import Slider from './ui/Slider';
 
 const ProductSection = () => {
   return (
@@ -18,7 +19,7 @@ const ProductSection = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="hidden grid-cols-2 gap-8 lg:grid">
             {productsList.map((item) => (
               <CardProducts
                 key={item.id}
@@ -28,6 +29,9 @@ const ProductSection = () => {
                 image={item.image}
               />
             ))}
+          </div>
+          <div className="md:hidden">
+            <Slider data={productsList} />
           </div>
         </div>
       </div>

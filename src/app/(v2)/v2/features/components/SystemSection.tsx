@@ -15,16 +15,18 @@ const SystemSection = () => {
             With tools to make every part of your process more human and a support team excited to help you.
           </p>
         </div>
-        <div className="mt-14 grid grid-cols-3 gap-8">
+        <div className="mt-14 grid grid-cols-2 gap-2 md:grid-cols-3 lg:gap-8">
           <div className="lg:py-72px relative z-10 col-span-2 row-span-2 flex auto-cols-fr flex-col items-center justify-start gap-10 overflow-hidden rounded-2xl bg-additional-navy px-[42.5px] py-[50px] lg:min-h-[460px]">
-            <div className="min-h-[291px] space-y-4 text-center lg:min-h-0">
+            <div className="min-h-[200px] space-y-4 text-center lg:min-h-[291px]">
               <p className="text-xl font-medium leading-[120%] text-white lg:text-h2">Mobile Friendly</p>
-              <p className="text-xl text-white">Access your tasks, update progress, and collaborate from any device.</p>
+              <p className="text-xs text-white md:text-xl">
+                Access your tasks, update progress, and collaborate from any device.
+              </p>
             </div>
             <Image
               src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722225628/taskify/assets/images/dashboard-mobile.png"
               alt="dashboard-mobile"
-              className="absolute -bottom-[400px] z-10"
+              className="absolute -bottom-[70%] z-10 max-w-[199px] md:-bottom-[400px] md:max-w-none"
               quality={100}
               width={470}
               height={809}

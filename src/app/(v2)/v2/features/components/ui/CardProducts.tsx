@@ -12,7 +12,7 @@ const CardProducts: FC<IFeatures> = ({ title, description, image, id }) => {
           'bg-primary-500': id === 1,
           'bg-additional-navy': id === 2,
           'bg-additional-purple': id === 3,
-          'shadow-md': id === 4, // {{ edit_1 }} Added box-shadow for id 4
+          'bg-white shadow-md': id === 4, // {{ edit_1 }} Added box-shadow for id 4
         },
       )}
     >
