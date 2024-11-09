@@ -6,7 +6,7 @@ import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
 import { ITeamsCompany } from '@/interfaces/ICompany';
 import { Button, Image } from '@nextui-org/react';
 import { FC } from 'react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import SocialMediaLinks from './SocialMediaLinks';
 
@@ -25,13 +25,13 @@ const Slider: FC<ISliderTeams> = ({ data }) => {
     <div className="relative md:hidden">
       <Swiper
         slidesPerView={1}
-        autoplay={true}
-        loop={true}
+        autoplay={false}
+        loop={false}
         navigation={{
-          prevEl: '.prev',
-          nextEl: '.next',
+          prevEl: '.slidePrev-btn',
+          nextEl: '.slideNext-btn',
         }}
-        modules={[Autoplay, Navigation]}
+        modules={[Navigation]}
         className="overflow-visible "
         // onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
@@ -65,23 +65,23 @@ const Slider: FC<ISliderTeams> = ({ data }) => {
             </div>
           </SwiperSlide>
         ))}
-        <Button
-          isIconOnly
-          radius="full"
-          className="slidePrev-btn absolute left-0 top-52 z-10 bg-primary-500 text-white"
-          onClick={() => swiper?.slidePrev()}
-        >
-          <ArrowLeftIcon />
-        </Button>
-        <Button
-          isIconOnly
-          radius="full"
-          className="slideNext-btn absolute right-0 top-52 z-10 bg-primary-500 text-white"
-          onClick={() => swiper?.slideNext()}
-        >
-          <ArrowRightIcon />
-        </Button>
       </Swiper>
+      <Button
+        isIconOnly
+        radius="full"
+        className="slidePrev-btn absolute -left-[10px] top-52 z-[99] bg-primary-500 text-white"
+        onClick={() => swiper?.slidePrev()}
+      >
+        <ArrowLeftIcon />
+      </Button>
+      <Button
+        isIconOnly
+        radius="full"
+        className="slideNext-btn absolute -right-[10px] top-52 z-[99] bg-primary-500 text-white"
+        onClick={() => swiper?.slideNext()}
+      >
+        <ArrowRightIcon />
+      </Button>
     </div>
   );
 };
