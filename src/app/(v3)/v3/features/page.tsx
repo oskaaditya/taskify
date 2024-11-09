@@ -1,5 +1,6 @@
 import HeroSection from './components/HeroSection';
 import ProductSection from './components/ProductSection';
+import ResponsiveSection from './components/ResponsiveSection';
 import TimelineSection from './components/TimelineSection';
 
 const Features = () => {
@@ -8,6 +9,7 @@ const Features = () => {
       <HeroSection />
       <ProductSection />
       <TimelineSection />
+      <ResponsiveSection />
     </>
   );
 };
