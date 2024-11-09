@@ -26,7 +26,7 @@ const HeroSection = () => {
             <div className="item-start flex w-full flex-col justify-between gap-4">
               <h1 className="max-w-[640px] text-[28px] font-medium md:text-h1">Step up your companies game</h1>
               <div className="space-y-6">
-                <p className="max-w-[490px] text-lg font-medium text-neutral-500">
+                <p className="max-w-[490px] text-lg text-neutral-500">
                   Say hello to efficient workflows and goodbye to unnecessary stress.
                 </p>
                 <div className="flex flex-col items-center gap-2 lg:flex-row">

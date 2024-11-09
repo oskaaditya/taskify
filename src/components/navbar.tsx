@@ -107,21 +107,16 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
                         base: 'gap-4',
                       }}
                     >
-                      {item.submenu.map(
-                        (
-                          submenuItem,
-                          index, // Changed 'item' to 'submenuItem'
-                        ) => (
-                          <DropdownItem key={index}>
-                            <Link
-                              className={`w-full ${pathname === submenuItem.url ? 'font-bold text-primary-500' : 'text-neutral-600'} `}
-                              href={submenuItem.url}
-                            >
-                              {submenuItem.name}
-                            </Link>
-                          </DropdownItem>
-                        ),
-                      )}
+                      {item.submenu.map((submenuItem, index) => (
+                        <DropdownItem key={index}>
+                          <Link
+                            className={`w-full ${pathname === submenuItem.url ? 'font-bold text-primary-500' : 'text-neutral-600'} `}
+                            href={submenuItem.url}
+                          >
+                            {submenuItem.name}
+                          </Link>
+                        </DropdownItem>
+                      ))}
                     </DropdownMenu>
                   </Dropdown>
                 ),
