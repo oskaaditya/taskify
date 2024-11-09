@@ -6,7 +6,7 @@ import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
 import { ITeamsCompany } from '@/interfaces/ICompany';
 import { Button, Image } from '@nextui-org/react';
 import { FC } from 'react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import SocialMediaLinks from './SocialMediaLinks';
 
@@ -25,13 +25,13 @@ const SliderV2: FC<ISliderTeams> = ({ data }) => {
     <div className="relative md:hidden">
       <Swiper
         slidesPerView={1}
-        autoplay={true}
-        loop={true}
+        autoplay={false}
+        loop={false}
         navigation={{
-          prevEl: '.prev',
-          nextEl: '.next',
+          prevEl: '.slidePrev-btn',
+          nextEl: '.slideNext-btn',
         }}
-        modules={[Autoplay, Navigation]}
+        modules={[Navigation]}
         className="overflow-visible "
         // onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
