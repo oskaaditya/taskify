@@ -2,6 +2,8 @@
 
 import { navbarItems } from '@/app/constants';
 import {
+  Accordion,
+  AccordionItem,
   Button,
   Dropdown,
   DropdownItem,
@@ -137,14 +139,45 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
                 </Button>
               </NavbarItem>
             </NavbarContent>
-            <NavbarMenu className="space-y-10 px-0 py-6">
-              {navbarItems.map((item, index) => (
-                <NavbarMenuItem key={`${item}-${index}`} className="px-6">
-                  <Link className="w-full text-2xl" href={item.url}>
-                    {item.name}
-                  </Link>
-                </NavbarMenuItem>
-              ))}
+            <NavbarMenu className="h-auto space-y-10 bg-white px-0 py-6">
+              {navbarItems.map((item, index) =>
+                !item.submenu ? (
+                  <NavbarItem key={`${item}-${index}`} className="px-6">
+                    <Link
+                      className={`w-full text-2xl font-medium ${pathname === item.url ? ' text-primary-500' : 'text-neutral-600'} `}
+                      href={item.url}
+                    >
+                      {item.name}
+                    </Link>
+                  </NavbarItem>
+                ) : (
+                  <Accordion key={`${item}-${index}`} className="px-6 py-0" selectionMode="single">
+                    <AccordionItem
+                      className="text-2xl"
+                      classNames={{
+                        title: 'text-2xl font-medium',
+                        content: 'text-lg',
+                      }}
+                      key={index}
+                      aria-label={item.name}
+                      title={item.name}
+                      indicator={<ArrowRightIcon height={0} fill="transparent" />}
+                    >
+                      <div className="rounded-md bg-primary-100 p-4">
+                        {item.submenu.map((submenuItem, index) => (
+                          <Link
+                            key={index}
+                            className={`w-full py-2 text-lg font-medium ${pathname === submenuItem.url ? ' text-primary-500' : 'text-neutral-600'} `}
+                            href={submenuItem.url}
+                          >
+                            {submenuItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </AccordionItem>
+                  </Accordion>
+                ),
+              )}
               <NavbarMenuItem className="space-y-4 px-6">
                 <Button
                   as={Link}
