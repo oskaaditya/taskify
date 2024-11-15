@@ -139,7 +139,7 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
                 </Button>
               </NavbarItem>
             </NavbarContent>
-            <NavbarMenu className="h-auto space-y-10 bg-white px-0 py-6">
+            <NavbarMenu className="px-h-auto h-auto space-y-10 bg-white">
               {navbarItems.map((item, index) =>
                 !item.submenu ? (
                   <NavbarItem key={`${item}-${index}`} className="px-6">

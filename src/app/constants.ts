@@ -7,6 +7,24 @@ import { IFaq, IPlan } from '@/interfaces/IPricing';
 
 export const navbarItems: LinksProps[] = [
   {
+    url: '/',
+    name: 'Home',
+    submenu: [
+      {
+        name: 'Home V1',
+        url: '/',
+      },
+      {
+        name: 'Home V2',
+        url: '/v2',
+      },
+      {
+        name: 'Home V3',
+        url: '/v3',
+      },
+    ],
+  },
+  {
     url: '/features',
     name: 'Features',
     submenu: [
