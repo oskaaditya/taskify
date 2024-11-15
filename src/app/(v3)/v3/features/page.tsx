@@ -1,6 +1,7 @@
 import HeroSection from './components/HeroSection';
 import ProductSection from './components/ProductSection';
 import ResponsiveSection from './components/ResponsiveSection';
+import SystemSection from './components/SystemSection';
 import TimelineSection from './components/TimelineSection';
 
 const Features = () => {
@@ -10,6 +11,7 @@ const Features = () => {
       <ProductSection />
       <TimelineSection />
       <ResponsiveSection />
+      <SystemSection />
     </>
   );
 };
