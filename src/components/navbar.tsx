@@ -21,6 +21,8 @@ import {
 import { MenuIcon } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { FC, useState } from 'react';
+import BannerDesktop from './banner-desktop';
+import BannerMobile from './banner-mobile';
 import { Icons } from './icons';
 import ArrowRightIcon from './icons/ArrowRightIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
@@ -44,31 +46,7 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
   return (
     <>
       {isBannerVisible && showBanner && (
-        <div className="h-full w-full max-w-[full] rounded-none bg-primary-500 py-[11px] text-center text-sm text-white transition-all sm:order-first md:block">
-          <div className="relative flex w-full items-center justify-center gap-[9px]">
-            <div className="rounded-full bg-white/20 px-2 py-1 text-[10px] font-bold text-white shadow-sm shadow-white/50 -shadow-x-[1px] -shadow-y-[1px]">
-              NEW
-            </div>
-            <p>We are excited to announce our brand new feature,</p>
-            <Button
-              as={Link}
-              href="#"
-              className="bg-transparent p-0 text-sm text-white"
-              variant="flat"
-              endContent={<ArrowRightIcon size={16} />}
-            >
-              Learn More
-            </Button>
-            <Button
-              as={Link}
-              onClick={handleCloseBanner}
-              className="absolute right-6 bg-transparent p-0 text-sm text-white"
-              isIconOnly
-            >
-              <CloseIcon size={16} />
-            </Button>
-          </div>
-        </div>
+        <BannerDesktop onClose={handleCloseBanner} title="We are excited to announce our brand new feature," href="#" />
       )}
       <div className="flex items-center justify-between border-b border-neutral-200 px-6 py-[19.5px]">
         <div className="container mx-auto">
@@ -80,7 +58,6 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
                 </Link>
               </NavbarBrand>
             </NavbarContent>
-
             <NavbarContent className="mx-auto hidden gap-14 sm:flex" justify="center">
               {navbarItems.map((item, index) =>
                 !item.submenu ? (
@@ -194,25 +171,7 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
                 </div>
               </NavbarMenuItem>
               <NavbarMenuItem>
-                <div className="order-last flex h-full w-full max-w-[full] flex-col rounded-none bg-primary-500 py-[11px] text-center text-sm text-white transition-all ">
-                  <div className="relative flex w-full flex-wrap items-center justify-center gap-[9px] px-6">
-                    <div className="flex items-center gap-2">
-                      <div className="rounded-full bg-white/20 px-2 py-1 text-[10px] font-bold text-white shadow-sm shadow-white/50 -shadow-x-[1px] -shadow-y-[1px]">
-                        NEW
-                      </div>
-                      <p className="text-xs">We are excited to announce our brand new feature,</p>
-                    </div>
-                    <Button
-                      as={Link}
-                      href="#"
-                      className="bg-transparent p-0 text-sm text-white"
-                      variant="flat"
-                      endContent={<ArrowRightIcon size={16} />}
-                    >
-                      Learn More
-                    </Button>
-                  </div>
-                </div>
+                <BannerMobile title="We are excited to announce our brand new feature," href="#" />
               </NavbarMenuItem>
             </NavbarMenu>
             <NavbarMenuToggle
