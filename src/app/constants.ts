@@ -449,3 +449,21 @@ export const highlightTagList: IHightlightsTag[] = [
     title: 'Customable',
   },
 ];
+
+export const upwardImagesFeaturesV3 = [
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851368/taskify/assets/images/tugv0sh9af8xlnvizfb0.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851033/taskify/assets/images/system-v3-img-2.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851369/taskify/assets/images/jr5mdcl4ywylnbi0sj2f.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851368/taskify/assets/images/tugv0sh9af8xlnvizfb0.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851033/taskify/assets/images/system-v3-img-2.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851369/taskify/assets/images/jr5mdcl4ywylnbi0sj2f.webp',
+];
+
+export const downwardImagesFeaturesV3 = [
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851033/taskify/assets/images/qy5c1gbr05qetv6cohnp.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851032/taskify/assets/images/ntz8mn66jnrnn8bj512g.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851033/taskify/assets/images/hmqdcp4pl7sqxqqgicyt.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851033/taskify/assets/images/qy5c1gbr05qetv6cohnp.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851032/taskify/assets/images/ntz8mn66jnrnn8bj512g.webp',
+  'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851033/taskify/assets/images/hmqdcp4pl7sqxqqgicyt.webp',
+];

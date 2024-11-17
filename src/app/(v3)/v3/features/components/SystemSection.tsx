@@ -1,9 +1,13 @@
-import { Button, Image } from '@nextui-org/react';
+'use client';
+
+import { downwardImagesFeaturesV3, upwardImagesFeaturesV3 } from '@/app/constants';
+import ImageMarque from '@/components/ui/ImageMarquee';
+import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 
 const SystemSection = () => {
   return (
-    <section className="relative overflow-hidden bg-white px-5 py-10 lg:px-0 lg:py-[213px] lg:pl-5">
+    <section className="relative overflow-hidden bg-white px-5 py-10 lg:max-h-[616px] lg:py-[170px] lg:pl-5">
       <div className="container mx-auto">
         <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <div className="max-w-[720px] space-y-4">
@@ -27,11 +31,11 @@ const SystemSection = () => {
               </div>
             </div>
           </div>
-          <div className="absolute right-0 top-0 order-first rounded-[10px] bg-primary-300 px-[12px] py-[18px] lg:order-last lg:max-w-[384px] lg:rounded-2xl lg:px-[22px] lg:py-[31px] xl:max-w-[540px]">
-            <Image
-              className="w-full"
-              src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png"
-            />
+          <div className="relative right-0 top-0 order-first max-h-[294px] gap-4 overflow-hidden sm:absolute sm:max-h-none lg:order-last lg:rounded-2xl">
+            <div className="relative flex gap-2 sm:-right-[25%] sm:gap-4 xl:-right-20 xl:gap-6">
+              <ImageMarque images={upwardImagesFeaturesV3} direction="up" />
+              <ImageMarque images={downwardImagesFeaturesV3} direction="down" />
+            </div>
           </div>
         </div>
       </div>
