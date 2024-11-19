@@ -470,3 +470,21 @@ export const downwardImagesFeaturesV3 = [
   'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851032/taskify/assets/images/ntz8mn66jnrnn8bj512g.webp',
   'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851033/taskify/assets/images/hmqdcp4pl7sqxqqgicyt.webp',
 ];
+
+export const dummyLogosHomeV1 = [
+  {
+    src: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731987115/taskify/assets/images/nuvn3lwbhdkj16daemen.png',
+  },
+  {
+    src: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731987115/taskify/assets/images/qodychfgibkhcrx84bvj.png',
+  },
+  {
+    src: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731987116/taskify/assets/images/cmu6hzdgqjjuykhqwiuc.png',
+  },
+  {
+    src: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731987116/taskify/assets/images/awj1wixpfiipeffeamrr.png',
+  },
+  {
+    src: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731987116/taskify/assets/images/hjzjjbddlmeonqez1d46.png',
+  },
+];
