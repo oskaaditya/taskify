@@ -439,14 +439,17 @@ export const highlightTagList: IHightlightsTag[] = [
   {
     Icon: Icons.collab,
     title: 'Collab',
+    description: 'Collaboration Team',
   },
   {
     Icon: Icons.secure,
     title: 'Secure',
+    description: 'Encrypted Data',
   },
   {
     Icon: Icons.stars2,
     title: 'Customable',
+    description: 'Customizable Block',
   },
 ];
 

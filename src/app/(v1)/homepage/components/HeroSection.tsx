@@ -1,3 +1,4 @@
+import { Icons } from '@/components/icons';
 import { Button } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,15 +9,14 @@ const HeroSection = () => {
     <section className="relative overflow-hidden bg-white px-5 pt-14 md:py-[124.5px] xl:py-[144px]">
       <BackgroundHero />
       <div className="container mx-auto">
-        <div className="relative mb-8 max-w-[584px] space-y-8 md:mx-8 md:mb-0">
+        <div className="mb-8 max-w-[584px] space-y-8 md:mx-8 md:mb-0">
           <div className="space-y-4">
-            <h1 className="text-[28px] font-medium md:text-h1">Step up your companies game</h1>
+            <h1 className="text-[28px] font-medium md:text-h1">The better way for your customer needs.</h1>
             <p className="max-w-[490px] text-base font-medium text-neutral-500">
-              Say hello to efficient workflows and goodbye to unnecessary stress. With our user-friendly interface and
-              powerful features, tackling tasks never been more enjoyable.
+              Flexible and easy for all teams to use, so you can deliver quality work together faster.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-2 lg:flex-row">
+          <div className="flex flex-col items-center gap-6 lg:flex-row">
             <Button
               as={Link}
               href="#"
@@ -25,14 +25,10 @@ const HeroSection = () => {
             >
               Get started
             </Button>
-            <Button
-              as={Link}
-              href="#"
-              className="h-auto w-full bg-transparent px-9 py-[13px] text-lg text-primary-500 md:w-fit"
-              variant="flat"
-            >
-              See all features
-            </Button>
+            <div className="flex items-center justify-center gap-[10px] text-primary-500">
+              <Icons.discount className="text-primary size-8" />
+              <p className="text-lg">100% Free Demo</p>
+            </div>
           </div>
         </div>
       </div>

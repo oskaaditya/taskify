@@ -1,13 +1,13 @@
-const Home = () => {
+import HeroSection from './homepage/components/HeroSection';
+import Highlights from './homepage/components/Highlights';
+
+const Homepage = () => {
   return (
     <>
-      <section className="h-screen px-6 xl:px-20">
-        <div className="container mx-auto ">
-          <h1 className="">Landing Page v1</h1>
-        </div>
-      </section>
+      <HeroSection />
+      <Highlights />
     </>
   );
 };
 
-export default Home;
+export default Homepage;

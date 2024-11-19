@@ -19,7 +19,7 @@ const pathMotion = {
 
 const HightlightTopRight = () => {
   return (
-    <div className="absolute right-0 top-0 z-0 hidden md:block">
+    <div className="absolute right-0 top-0 hidden md:block">
       <svg xmlns="http://www.w3.org/2000/svg" width="129" height="124" viewBox="0 0 129 124" fill="none">
         <motion.path
           variants={pathMotion}
@@ -50,7 +50,7 @@ const HightlightTopRight = () => {
 
 const HightlightTopLeft = () => {
   return (
-    <div className="absolute left-0 top-0 z-0">
+    <div className="absolute left-0 top-0">
       <svg width="274" height="156" viewBox="0 0 274 156" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -81,7 +81,7 @@ const HightlightTopLeft = () => {
 
 const HightlightBottomLeft = () => {
   return (
-    <div className="absolute bottom-0 left-0 z-0 hidden md:block">
+    <div className="absolute bottom-0 left-0 hidden md:block">
       <svg width="172" height="66" viewBox="0 0 172 66" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -112,7 +112,7 @@ const HightlightBottomLeft = () => {
 
 const HightlightRight = () => {
   return (
-    <div className="absolute right-0 z-0 hidden md:block">
+    <div className="absolute right-0 hidden md:block">
       <svg width="231" height="238" viewBox="0 0 231 238" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -142,7 +142,7 @@ const HightlightRight = () => {
 };
 const HightlightLeft = () => {
   return (
-    <div className="absolute bottom-0 left-0 z-0 md:hidden">
+    <div className="absolute bottom-0 left-0 md:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" width="94" height="861" viewBox="0 0 94 861" fill="none">
         <motion.path
           variants={pathMotion}
@@ -173,7 +173,7 @@ const HightlightLeft = () => {
 
 const HeroTopLeft = () => {
   return (
-    <div className="absolute -top-1/2 left-0 z-0 md:-top-12">
+    <div className="absolute -top-1/2 left-0 md:-top-12">
       <svg xmlns="http://www.w3.org/2000/svg" width="88" height="483" viewBox="0 0 88 483" fill="none">
         <motion.path
           variants={pathMotion}
@@ -204,7 +204,7 @@ const HeroTopLeft = () => {
 
 const HeroTopRight = () => {
   return (
-    <div className="absolute right-0 top-0 z-0 md:-top-12 md:hidden">
+    <div className="absolute right-0 top-0 md:-top-12 md:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" width="31" height="205" viewBox="0 0 31 205" fill="none">
         <motion.path
           variants={pathMotion}
@@ -235,7 +235,7 @@ const HeroTopRight = () => {
 
 const HeroBottomLeft = () => {
   return (
-    <div className="absolute -left-[100%] bottom-0 z-0 md:-bottom-[120px] md:-left-[20%]">
+    <div className="absolute -left-[100%] bottom-0 md:-bottom-[120px] md:-left-[20%]">
       <svg xmlns="http://www.w3.org/2000/svg" width="580" height="207" viewBox="0 0 580 207" fill="none">
         <motion.path
           variants={pathMotion}
@@ -266,7 +266,7 @@ const HeroBottomLeft = () => {
 
 const HeroBottomRight = () => {
   return (
-    <div className="absolute bottom-10 right-0 z-0 md:hidden">
+    <div className="absolute bottom-10 right-0 md:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="496" viewBox="0 0 21 496" fill="none">
         <motion.path
           variants={pathMotion}
@@ -297,7 +297,7 @@ const HeroBottomRight = () => {
 
 const FirstFeaturesBottomLeft = () => {
   return (
-    <div className="absolute bottom-0 left-0 z-0">
+    <div className="absolute bottom-0 left-0">
       <svg width="199" height="231" viewBox="0 0 199 231" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -328,7 +328,7 @@ const FirstFeaturesBottomLeft = () => {
 
 const FirstFeaturesBottomRight = () => {
   return (
-    <div className="absolute -bottom-10 right-0 z-0">
+    <div className="absolute -bottom-10 right-0">
       <svg width="165" height="218" viewBox="0 0 165 218" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -359,7 +359,7 @@ const FirstFeaturesBottomRight = () => {
 
 const FirstFeaturesTopRight = () => {
   return (
-    <div className="absolute right-0 top-0 z-0">
+    <div className="absolute right-0 top-0">
       <svg width="165" height="238" viewBox="0 0 165 238" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -390,7 +390,7 @@ const FirstFeaturesTopRight = () => {
 
 const SecondFeaturesBottomRight = () => {
   return (
-    <div className="absolute bottom-0 right-0 z-0">
+    <div className="absolute bottom-0 right-0">
       <svg width="165" height="218" viewBox="0 0 165 218" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -421,7 +421,7 @@ const SecondFeaturesBottomRight = () => {
 
 const SecondFeaturesTopLeft = () => {
   return (
-    <div className="absolute left-0 top-0 z-0">
+    <div className="absolute left-0 top-0">
       <svg width="165" height="336" viewBox="0 0 165 336" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -452,7 +452,7 @@ const SecondFeaturesTopLeft = () => {
 
 const SecondFeaturesBottomLeft = () => {
   return (
-    <div className="absolute bottom-0 left-0 z-0">
+    <div className="absolute bottom-0 left-0">
       <svg width="199" height="231" viewBox="0 0 199 231" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -483,7 +483,7 @@ const SecondFeaturesBottomLeft = () => {
 
 const ThirdFeaturesTopLeft = () => {
   return (
-    <div className="absolute left-0 z-0">
+    <div className="absolute left-0">
       <svg width="198" height="416" viewBox="0 0 198 416" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -514,7 +514,7 @@ const ThirdFeaturesTopLeft = () => {
 
 const ThirdFeaturesTopRight = () => {
   return (
-    <div className="absolute right-0 top-0 z-0">
+    <div className="absolute right-0 top-0">
       <svg width="175" height="149" viewBox="0 0 175 149" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -545,7 +545,7 @@ const ThirdFeaturesTopRight = () => {
 
 const IntegratedTopRight = () => {
   return (
-    <div className="absolute right-0 top-0 z-0">
+    <div className="absolute right-0 top-0">
       <svg width="162" height="129" viewBox="0 0 162 129" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -576,7 +576,7 @@ const IntegratedTopRight = () => {
 
 const IntegratedBottomLeft = () => {
   return (
-    <div className="absolute bottom-0 left-0 z-0">
+    <div className="absolute bottom-0 left-0">
       <svg width="63" height="302" viewBox="0 0 63 302" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
@@ -607,7 +607,7 @@ const IntegratedBottomLeft = () => {
 
 const IntegratedBottom = () => {
   return (
-    <div className="absolute bottom-0 left-0 z-0">
+    <div className="absolute bottom-0 left-0">
       <svg width="341" height="107" viewBox="0 0 341 107" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}

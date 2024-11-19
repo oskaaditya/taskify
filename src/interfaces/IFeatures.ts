@@ -16,4 +16,5 @@ export interface IHightlights {
 export interface IHightlightsTag {
   Icon?: LucideIcon;
   title: string;
+  description?: string;
 }
