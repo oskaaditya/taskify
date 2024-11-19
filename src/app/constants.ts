@@ -4,6 +4,7 @@ import { IFeatures, IHightlights, IHightlightsTag } from '@/interfaces/IFeatures
 import { FooterLinks, LinksProps } from '@/interfaces/ILinks';
 import { INations } from '@/interfaces/INation';
 import { IFaq, IPlan } from '@/interfaces/IPricing';
+import { IProductsCardProps } from '@/interfaces/IProduct';
 
 export const navbarItems: LinksProps[] = [
   {
@@ -382,7 +383,7 @@ export const featuresList: IFeatures[] = [
   },
 ];
 
-export const productsList: IFeatures[] = [
+export const productsList: IProductsCardProps[] = [
   {
     id: 1,
     title: 'Task Management',
@@ -412,6 +413,25 @@ export const productsList: IFeatures[] = [
     title: 'Customize Workspace',
     description:
       "With Taskify, customize your workspace to fit your workflow perfectly. Drag, drop, and personalize your tools to create a workspace that's uniquely yours.",
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png',
+  },
+];
+
+export const productsHomeV1List: IProductsCardProps[] = [
+  {
+    id: 1,
+    title: 'Kanban',
+    description:
+      'Make it easy for your team to focus on tasks currently at hand. Define each stage of work to see what’s important.',
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-1.png',
+  },
+  {
+    id: 2,
+    title: 'Timeline',
+    description:
+      'See how work maps out over time. Manage dependent, overlapping, and unscheduled tasks and create plans.',
     image:
       'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png',
   },

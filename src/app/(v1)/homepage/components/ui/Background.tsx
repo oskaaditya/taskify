@@ -295,7 +295,7 @@ const HeroBottomRight = () => {
   );
 };
 
-const FirstFeaturesBottomLeft = () => {
+const FirstProductsBottomLeft = () => {
   return (
     <div className="absolute bottom-0 left-0">
       <svg width="199" height="231" viewBox="0 0 199 231" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -326,7 +326,7 @@ const FirstFeaturesBottomLeft = () => {
   );
 };
 
-const FirstFeaturesBottomRight = () => {
+const FirstProductsBottomRight = () => {
   return (
     <div className="absolute -bottom-10 right-0">
       <svg width="165" height="218" viewBox="0 0 165 218" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -357,7 +357,7 @@ const FirstFeaturesBottomRight = () => {
   );
 };
 
-const FirstFeaturesTopRight = () => {
+const FirstProductsTopRight = () => {
   return (
     <div className="absolute right-0 top-0">
       <svg width="165" height="238" viewBox="0 0 165 238" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -388,30 +388,60 @@ const FirstFeaturesTopRight = () => {
   );
 };
 
-const SecondFeaturesBottomRight = () => {
+const SecondProductsBottomRight = () => {
   return (
     <div className="absolute bottom-0 right-0">
-      <svg width="165" height="218" viewBox="0 0 165 218" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="190" height="257" viewBox="0 0 190 257" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
           initial="hidden"
           animate="visible"
-          d="M278 1H101C45.7715 1 1.00001 45.7715 1.00001 101V338"
-          stroke="url(#paint0_linear_7141_6382)"
-          strokeOpacity="0.32"
+          d="M190 1H101C45.7715 1 1 45.7715 1 101V382"
+          stroke="url(#paint0_linear_7139_6366)"
         />
         <defs>
           <linearGradient
-            id="paint0_linear_7141_6382"
-            x1="278"
-            y1="1"
-            x2="-74.3585"
-            y2="212.384"
+            id="paint0_linear_7139_6366"
+            x1="1.00001"
+            y1="130.54"
+            x2="-44.6254"
+            y2="277.765"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="0.54" stopColor="white" />
-            <stop offset="1" stopColor="white" stopOpacity="0.428571" />
+            <stop stopColor="#14B8A6" stopOpacity="0.4" />
+            <stop offset="0.369792" stopColor="#14B8A6" />
+            <stop offset="0.640625" stopColor="#14B8A6" />
+            <stop offset="1" stopColor="#14B8A6" stopOpacity="0.4" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+};
+const SecondProductsTopRight = () => {
+  return (
+    <div className="absolute right-0 top-0">
+      <svg width="209" height="213" viewBox="0 0 209 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <motion.path
+          variants={pathMotion}
+          initial="hidden"
+          animate="visible"
+          d="M209 212H101C45.7715 212 1 167.228 1 112V7.27177e-06"
+          stroke="url(#paint0_linear_7139_6365)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_7139_6365"
+            x1="141.718"
+            y1="212"
+            x2="85.5445"
+            y2="180.861"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#F59E0B" stopOpacity="0.4" />
+            <stop offset="0.369792" stopColor="#F59E0B" />
+            <stop offset="0.640625" stopColor="#F59E0B" />
+            <stop offset="1" stopColor="#F59E0B" stopOpacity="0.4" />
           </linearGradient>
         </defs>
       </svg>
@@ -419,30 +449,30 @@ const SecondFeaturesBottomRight = () => {
   );
 };
 
-const SecondFeaturesTopLeft = () => {
+const SecondProductsTopLeft = () => {
   return (
     <div className="absolute left-0 top-0">
-      <svg width="165" height="336" viewBox="0 0 165 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="217" height="453" viewBox="0 0 217 453" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
           initial="hidden"
           animate="visible"
-          d="M-113 335H64C119.228 335 164 290.228 164 235V-42"
-          stroke="url(#paint0_linear_7141_6381)"
-          strokeOpacity="0.56"
+          d="M0 452H116C171.228 452 216 407.228 216 352V-7.39098e-06"
+          stroke="url(#paint0_linear_7139_6364)"
         />
         <defs>
           <linearGradient
-            id="paint0_linear_7141_6381"
-            x1="-113"
-            y1="335"
-            x2="259.149"
-            y2="135.431"
+            id="paint0_linear_7139_6364"
+            x1="216"
+            y1="298.32"
+            x2="271.808"
+            y2="124.838"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="0.54" stopColor="white" />
-            <stop offset="1" stopColor="white" stopOpacity="0.428571" />
+            <stop stopColor="#14B8A6" stopOpacity="0.4" />
+            <stop offset="0.369792" stopColor="#14B8A6" />
+            <stop offset="0.640625" stopColor="#14B8A6" />
+            <stop offset="1" stopColor="#14B8A6" stopOpacity="0.4" />
           </linearGradient>
         </defs>
       </svg>
@@ -450,30 +480,30 @@ const SecondFeaturesTopLeft = () => {
   );
 };
 
-const SecondFeaturesBottomLeft = () => {
+const SecondProductsBottomLeft = () => {
   return (
-    <div className="absolute bottom-0 left-0">
-      <svg width="199" height="231" viewBox="0 0 199 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className="absolute bottom-0 left-0 z-0">
+      <svg width="252" height="192" viewBox="0 0 252 192" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           variants={pathMotion}
           initial="hidden"
           animate="visible"
-          d="M0 1H98C153.228 1 198 45.7715 198 101V238"
-          stroke="url(#paint0_linear_7141_6383)"
-          strokeOpacity="0.56"
+          d="M-1 1H151C206.228 1 251 45.7715 251 101V476"
+          stroke="url(#paint0_linear_7139_6363)"
         />
         <defs>
           <linearGradient
-            id="paint0_linear_7141_6383"
-            x1="0"
-            y1="1"
-            x2="249.681"
-            y2="153.244"
+            id="paint0_linear_7139_6363"
+            x1="168.391"
+            y1="1.00001"
+            x2="265.749"
+            y2="60.1554"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="0.54" stopColor="white" />
-            <stop offset="1" stopColor="white" stopOpacity="0.428571" />
+            <stop stopColor="#D946EF" stopOpacity="0.4" />
+            <stop offset="0.369792" stopColor="#D946EF" />
+            <stop offset="0.640625" stopColor="#D946EF" />
+            <stop offset="1" stopColor="#D946EF" stopOpacity="0.4" />
           </linearGradient>
         </defs>
       </svg>
@@ -481,7 +511,7 @@ const SecondFeaturesBottomLeft = () => {
   );
 };
 
-const ThirdFeaturesTopLeft = () => {
+const ThirdProductsTopLeft = () => {
   return (
     <div className="absolute left-0">
       <svg width="198" height="416" viewBox="0 0 198 416" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -512,7 +542,7 @@ const ThirdFeaturesTopLeft = () => {
   );
 };
 
-const ThirdFeaturesTopRight = () => {
+const ThirdProductsTopRight = () => {
   return (
     <div className="absolute right-0 top-0">
       <svg width="175" height="149" viewBox="0 0 175 149" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -659,31 +689,32 @@ export const BackgroundHiglight = () => {
   );
 };
 
-export const BackgroundFirstFeatures = () => {
+export const BackgroundFirstProducts = () => {
   return (
     <>
-      <FirstFeaturesBottomLeft />
-      <FirstFeaturesBottomRight />
-      <FirstFeaturesTopRight />
+      <FirstProductsBottomLeft />
+      <FirstProductsBottomRight />
+      <FirstProductsTopRight />
     </>
   );
 };
 
-export const BackgroundSecondFeatures = () => {
+export const BackgroundSecondProducts = () => {
   return (
     <>
-      <SecondFeaturesBottomRight />
-      <SecondFeaturesTopLeft />
-      <SecondFeaturesBottomLeft />
+      <SecondProductsBottomRight />
+      <SecondProductsTopRight />
+      <SecondProductsTopLeft />
+      <SecondProductsBottomLeft />
     </>
   );
 };
 
-export const BackgroundThirdFeatures = () => {
+export const BackgroundThirdProducts = () => {
   return (
     <>
-      <ThirdFeaturesTopLeft />
-      <ThirdFeaturesTopRight />
+      <ThirdProductsTopLeft />
+      <ThirdProductsTopRight />
     </>
   );
 };

@@ -21,7 +21,7 @@ const CardFeatures: FC<IFeatures> = ({ id, title, image, description }) => {
   return (
     <div
       className={cn(
-        'relative flex w-full flex-col items-center justify-center gap-12 overflow-hidden rounded-2xl pt-7 lg:pt-14',
+        'relative flex w-full flex-col items-center justify-start gap-12 overflow-hidden rounded-2xl pt-7 lg:pt-14 xl:min-h-[500px]',
         {
           'bg-additional-navy': id === 1,
           'bg-primary-500': id === 2,
@@ -30,7 +30,7 @@ const CardFeatures: FC<IFeatures> = ({ id, title, image, description }) => {
       )}
     >
       {renderBackground(id)}
-      <div className="space-y-4 px-6 text-center">
+      <div className="relative space-y-4 px-6 text-center">
         <h2 className="text-[28px] font-medium text-white lg:text-5xl">{title}</h2>
         <p className="mx-auto max-w-[519px] text-sm text-white lg:text-base">{description}</p>
       </div>
@@ -40,7 +40,7 @@ const CardFeatures: FC<IFeatures> = ({ id, title, image, description }) => {
         alt="title"
         width={2880}
         height={800}
-        className="-mb-[80px] h-auto w-full max-w-[720px] lg:-mb-[225px]"
+        className="-mb-[80px] h-auto w-full max-w-[720px] lg:-mb-[225px] "
       />
     </div>
   );

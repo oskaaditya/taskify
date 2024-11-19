@@ -1,5 +1,6 @@
 import HeroSection from './homepage/components/HeroSection';
 import Highlights from './homepage/components/Highlights';
+import ProductsSection from './homepage/components/ProductsSection';
 import ScaleSection from './homepage/components/ScaleSection';
 
 const Homepage = () => {
@@ -7,6 +8,7 @@ const Homepage = () => {
     <>
       <HeroSection />
       <Highlights />
+      <ProductsSection />
       <ScaleSection />
     </>
   );
