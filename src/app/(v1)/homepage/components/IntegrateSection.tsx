@@ -1,6 +1,8 @@
-import { Button, Image } from '@nextui-org/react';
+import { integrateLists } from '@/app/constants';
+import { Button } from '@nextui-org/react';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import SliderCardIntegrate from './ui/SliderCardIntegrate';
 
 const IntegrateSection = () => {
   return (
@@ -16,16 +18,7 @@ const IntegrateSection = () => {
         </div>
       </div>
       <div className="mt-14 flex justify-center gap-8">
-        <div className="flex w-fit flex-col items-center justify-center gap-6 rounded-3xl bg-white px-12 py-8">
-          <Image
-            src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png"
-            className="max-w-11"
-          />
-          <div className="mx-auto max-w-[248px] space-y-2 text-center text-neutral-900">
-            <p className="text-xl font-medium text-neutral-900">Logoipsum</p>
-            <p>This powerful GitLab integration keeps your work in sync in both applications and website.</p>
-          </div>
-        </div>
+        <SliderCardIntegrate data={integrateLists} />
       </div>
       <Button
         as={Link}

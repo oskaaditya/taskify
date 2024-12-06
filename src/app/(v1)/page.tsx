@@ -3,6 +3,7 @@ import Highlights from './homepage/components/Highlights';
 import IntegrateSection from './homepage/components/IntegrateSection';
 import ProductsSection from './homepage/components/ProductsSection';
 import ScaleSection from './homepage/components/ScaleSection';
+import StoriesSection from './homepage/components/StoriesSection';
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <ProductsSection />
       <ScaleSection />
       <IntegrateSection />
+      <StoriesSection />
     </>
   );
 };

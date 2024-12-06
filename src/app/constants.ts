@@ -1,10 +1,12 @@
 import { Icons } from '@/components/icons';
 import { ITeamsCompany } from '@/interfaces/ICompany';
 import { IFeatures, IHightlights, IHightlightsTag } from '@/interfaces/IFeatures';
+import { IntegrateCardProps } from '@/interfaces/IIntegrate';
 import { FooterLinks, LinksProps } from '@/interfaces/ILinks';
 import { INations } from '@/interfaces/INation';
 import { IFaq, IPlan } from '@/interfaces/IPricing';
 import { IProductsCardProps } from '@/interfaces/IProduct';
+import { IStoriesCard } from '@/interfaces/IStories';
 
 export const navbarItems: LinksProps[] = [
   {
@@ -506,5 +508,70 @@ export const dummyLogosHomeV1 = [
   },
   {
     src: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731987116/taskify/assets/images/hjzjjbddlmeonqez1d46.png',
+  },
+];
+
+export const integrateLists: IntegrateCardProps[] = [
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
+    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
+    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
+    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
+    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
+    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
+    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
+    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+  },
+];
+
+export const storiesList: IStoriesCard[] = [
+  {
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1733381438/taskify/assets/images/krbqalqegsxbdfhbeynk.svg',
+    background:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1733381462/taskify/assets/images/mjgko901nrt5hwydgmvn.png',
+    name: 'Eric Garcia',
+    stories: '“Simple and seamless processing. reduces the number of third parties we work with”',
+    position: 'Project Manager at Open AI',
+  },
+  {
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1733381439/taskify/assets/images/vxnza93nvx8u8xdympq1.svg',
+    background:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1733381457/taskify/assets/images/brnoxas980yrasirmojq.png',
+    name: 'Martin Young',
+    stories: '“Ramp got the funding they needed to complete an acquisition in less than 48 hours”',
+    position: 'General Manager at Ramp',
+  },
+  {
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1733381438/taskify/assets/images/gq2rnasa4ohtisuls9mp.svg',
+    background:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1733381464/taskify/assets/images/rrrutmv9abgvfysqxx0b.png',
+    name: 'Vincent John',
+    stories: '“Simple and seamless processing. reduces the number of third parties we work with”',
+    position: 'Product Owner at Zendesk',
   },
 ];
