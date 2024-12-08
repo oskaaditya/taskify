@@ -1,7 +1,8 @@
 import { storiesList } from '@/app/constants';
 import { Button } from '@nextui-org/react';
-import { ArrowRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import SliderStories from './ui/SliderStories';
 import StoriesMarquee from './ui/StoriesMarquee';
 
 const StoriesSection = () => {
@@ -17,15 +18,20 @@ const StoriesSection = () => {
           <Button
             as={Link}
             href="#"
-            className="mx-auto mt-14 flex h-auto w-fit bg-primary-500 px-4 py-2.5 text-lg text-white"
+            className="mx-auto mt-14 flex h-auto w-fit bg-primary-500 px-4 py-2.5 text-base text-white sm:text-lg"
             variant="flat"
-            endContent={<ArrowRight className="size-5" />}
+            endContent={<ChevronRight className="size-5" />}
           >
             All Stories
           </Button>
         </div>
       </div>
-      <StoriesMarquee data={storiesList} />
+      <div className="hidden sm:block">
+        <StoriesMarquee data={storiesList} />
+      </div>
+      <div className="block sm:hidden">
+        <SliderStories data={storiesList} />
+      </div>
     </div>
   );
 };

@@ -21,8 +21,11 @@ const SliderCardIntegrate: FC<ISliderIntegrate> = ({ data }) => {
   return (
     <div className="relative h-auto w-full ">
       <Swiper
-        slidesPerView={5}
-        autoplay={true}
+        slidesPerView={7}
+        autoplay={{
+          delay: 200,
+          disableOnInteraction: false,
+        }}
         spaceBetween={48}
         centeredSlides
         centeredSlidesBounds
@@ -30,11 +33,17 @@ const SliderCardIntegrate: FC<ISliderIntegrate> = ({ data }) => {
         className="flex items-center overflow-visible"
         modules={[Autoplay]}
         onSlideChange={(swiper: SwiperType) => {
-          setActiveIndex(swiper.activeIndex);
+          const realIndex = swiper.realIndex;
+          setActiveIndex(realIndex);
         }}
       >
         {data.map((item, index) => (
-          <SwiperSlide key={index} className="relative flex justify-center">
+          <SwiperSlide
+            key={index}
+            className={`relative flex justify-center transition-all duration-300 ${
+              index === activeIndex ? 'min-w-[344px]' : 'w-144'
+            }`}
+          >
             <CardIntegrate
               img={item.logo}
               name={item.title}
