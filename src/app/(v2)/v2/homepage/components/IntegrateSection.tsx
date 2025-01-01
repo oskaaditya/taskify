@@ -1,8 +1,8 @@
 import { integrateLists } from '@/app/constants';
 import { Button } from '@nextui-org/react';
 import { ChevronRight } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
+import CardIntegrate from './ui/CardIntegrate';
 
 const IntegrateSection = () => {
   return (
@@ -23,15 +23,7 @@ const IntegrateSection = () => {
           </div>
           <div className="phone:grid-cols-1 grid grid-cols-3 gap-6">
             {integrateLists.map((item, index) => (
-              <div key={index} className="flex flex-col items-start space-y-6 rounded-3xl bg-white p-6">
-                <div className="rounded-2xl border border-neutral-300 p-4">
-                  <Image quality={100} width={24} height={24} src={item.logo} alt={item.title} />
-                </div>
-                <div className="space-y-2">
-                  <p className="text-xl font-bold">{item.title}</p>
-                  <p className="text-sm text-neutral-500">{item.description}</p>
-                </div>
-              </div>
+              <CardIntegrate key={index} {...item} />
             ))}
           </div>
           <Button
