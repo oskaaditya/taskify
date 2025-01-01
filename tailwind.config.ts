@@ -68,6 +68,11 @@ const config: Config = {
         'company-hero':
           "url('https://res.cloudinary.com/diuj6zd9p/image/upload/v1716795755/taskify/assets/images/company-hero-bg.jpg')",
       },
+      screens: {
+        phone: { max: '768px' },
+        desktop: { min: '769px', max: '1440px' },
+        largedesktop: { min: '1500px', max: '1920px' },
+      },
     },
   },
   darkMode: 'class',

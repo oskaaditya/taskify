@@ -420,7 +420,7 @@ export const productsList: IProductsCardProps[] = [
   },
 ];
 
-export const productsHomeV1List: IProductsCardProps[] = [
+export const productsHomeList: IProductsCardProps[] = [
   {
     id: 1,
     title: 'Kanban',
@@ -493,7 +493,7 @@ export const downwardImagesFeaturesV3 = [
   'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731851033/taskify/assets/images/hmqdcp4pl7sqxqqgicyt.webp',
 ];
 
-export const dummyLogosHomeV1 = [
+export const dummyLogosHome = [
   {
     src: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1731987115/taskify/assets/images/nuvn3lwbhdkj16daemen.png',
   },
@@ -519,33 +519,28 @@ export const integrateLists: IntegrateCardProps[] = [
   },
   {
     title: 'Lorem Ipsum',
-    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
-    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065801/taskify/assets/images/nyxniidzzjjd2o8eilbr.png',
+    description: 'Collaborate, manage projects, and reach new productivity peaks workflows.',
   },
   {
     title: 'Lorem Ipsum',
-    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
-    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/jy0g8x4dmjdbt0s7dzzy.png',
+    description: 'designed to be user-friendly and allowing users to personalize the layout.',
   },
   {
     title: 'Lorem Ipsum',
-    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
-    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065801/taskify/assets/images/a2nq4gm13gw2mkfyoswt.png',
+    description: 'a cloud-based platform that provides a variety of tools and services for building.',
   },
   {
     title: 'Lorem Ipsum',
-    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
-    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/vbwx2iixtwrjmhzagjiz.png',
+    description: 'Build software to meet customer needs, set your team, and keep your business in sync.',
   },
   {
     title: 'Lorem Ipsum',
-    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
-    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
-  },
-  {
-    title: 'Lorem Ipsum',
-    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/oqozxb4ug1ijmakgdgyz.png',
-    description: 'This powerful GitLab integration keeps your work in sync in both applications and website.',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065801/taskify/assets/images/gl27g2qofqjb9wjczt70.png',
+    description: 'Keeping your track of upcoming meetings, deadlines, and milestones.',
   },
 ];
 

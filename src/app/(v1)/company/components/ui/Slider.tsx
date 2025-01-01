@@ -13,6 +13,7 @@ import SocialMediaLinks from './SocialMediaLinks';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 interface ISliderTeams {
   data: ITeamsCompany[];

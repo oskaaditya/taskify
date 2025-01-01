@@ -1,4 +1,4 @@
-import { dummyLogosHomeV1 } from '@/app/constants';
+import { dummyLogosHome } from '@/app/constants';
 import { Icons } from '@/components/icons';
 import { Button } from '@nextui-org/react';
 import Image from 'next/image';
@@ -32,7 +32,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-[14px] lg:justify-start">
-            {dummyLogosHomeV1.map((item, index) => (
+            {dummyLogosHome.map((item, index) => (
               <Image
                 key={index}
                 src={item.src}

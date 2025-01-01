@@ -1,4 +1,4 @@
-import { productsHomeV1List } from '@/app/constants';
+import { productsHomeList } from '@/app/constants';
 import CardProducts from './ui/CardProducts';
 
 const ProductsSection = () => {
@@ -14,7 +14,7 @@ const ProductsSection = () => {
         </div>
         <div className="mt-14">
           <div className="space-y-16">
-            {productsHomeV1List.map((feature) => {
+            {productsHomeList.map((feature) => {
               return (
                 <CardProducts
                   key={feature.id}

@@ -1,4 +1,4 @@
-import { highlightList } from '@/app/constants';
+import { dummyLogosHome, highlightTagList } from '@/app/constants';
 import { Button, Image } from '@nextui-org/react';
 import Link from 'next/link';
 import { BackgroundHero } from './ui/Background';
@@ -29,30 +29,36 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <Image
-          className="mt-14 w-screen object-cover object-bottom"
-          radius="none"
-          src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1718938655/taskify/assets/images/dashboard-features.png"
-        />
-        <div className="mt-4 grid grid-cols-3 gap-10 lg:mt-[72px] lg:gap-24">
-          {highlightList.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center gap-2 font-medium text-primary-500 md:gap-6 lg:flex-row"
-            >
-              <p className="inline-flex text-2xl lg:text-[56px]">
-                {item.title === 'Companies'
-                  ? `${item.total}+`
-                  : item.title === 'Active'
-                    ? `${item.total}K+`
-                    : item.total}
-              </p>
-              <div className="space-y-1 text-center md:text-start">
-                <p className="text-sm text-neutral-600 md:text-2xl">{item.title}</p>
-                <p className="hidden text-lg text-neutral-500 lg:block">{item.description}</p>
+        <div className="mt-14 space-y-10">
+          <div className="mx-auto grid max-w-[860px] gap-24 lg:grid-cols-3">
+            {highlightTagList.map((item, index) => (
+              <div key={index} className="flex w-auto items-start gap-4 font-medium md:gap-6">
+                {item.Icon && <item.Icon className="size-6 text-primary-500 md:size-8" />}
+                <div className="space-y-1 text-start">
+                  <p className="text-xl text-neutral-600">{item.title}</p>
+                  <p className="text-lg text-neutral-500">{item.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <Image
+            className="w-screen object-cover object-bottom"
+            radius="none"
+            src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1718938655/taskify/assets/images/dashboard-features.png"
+          />
+        </div>
+        <div className="mt-[72px] flex flex-col items-center justify-center gap-6">
+          <p className="text-xl text-neutral-500">{`Trusted by world's best companies`}</p>
+          <div className="flex flex-wrap justify-center gap-6 lg:justify-start">
+            {dummyLogosHome.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                className="phone:max-w-20 h-auto w-full max-w-[190px]"
+                alt={`dummy logo ${index}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
