@@ -1,5 +1,5 @@
 import { productsHomeList } from '@/app/constants';
-import CardProducts from '../../features/components/ui/CardProducts';
+import CardProducts from './ui/CardProducts';
 
 const ProductSection = () => {
   return (

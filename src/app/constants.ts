@@ -437,6 +437,13 @@ export const productsHomeList: IProductsCardProps[] = [
     image:
       'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png',
   },
+  {
+    id: 3,
+    title: 'Mobile Friendly',
+    description: 'An accessible software that can be accessed on all devices.',
+    image:
+      'https://res.cloudinary.com/diuj6zd9p/image/upload/v1722237079/taskify/assets/images/dashboard-features-2.png',
+  },
 ];
 
 export const highlightList: IHightlights[] = [

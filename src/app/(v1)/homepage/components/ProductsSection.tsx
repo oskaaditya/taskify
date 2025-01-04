@@ -14,7 +14,7 @@ const ProductsSection = () => {
         </div>
         <div className="mt-14">
           <div className="space-y-16">
-            {productsHomeList.map((feature) => {
+            {productsHomeList.slice(0, 2).map((feature) => {
               return (
                 <CardProducts
                   key={feature.id}

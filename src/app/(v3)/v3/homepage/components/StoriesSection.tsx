@@ -2,7 +2,7 @@ import { storiesList } from '@/app/constants';
 import { Button } from '@nextui-org/react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import CardStories from './ui/CardStories';
+import SliderStories from './ui/SliderStories';
 
 const StoriesSection = () => {
   return (
@@ -31,11 +31,7 @@ const StoriesSection = () => {
               </Button>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6">
-            {storiesList.slice(0, 2).map((item, index) => (
-              <CardStories key={index} {...item} />
-            ))}
-          </div>
+          <SliderStories data={storiesList} />
         </div>
       </div>
     </section>

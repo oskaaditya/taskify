@@ -1,11 +1,19 @@
+import HeroSection from './homepage/components/HeroSection';
+import IntegrateSection from './homepage/components/IntegrateSection';
+import ProductSection from './homepage/components/ProductSection';
+import ResponsiveSection from './homepage/components/ResponsiveSection';
+import StoriesSection from './homepage/components/StoriesSection';
+import TimelineSection from './homepage/components/TimelineSection';
+
 const Home = () => {
   return (
     <>
-      <section className="h-screen px-6 xl:px-20">
-        <div className="container mx-auto ">
-          <h1 className="">Landing Page V3</h1>
-        </div>
-      </section>
+      <HeroSection />
+      <ProductSection />
+      <TimelineSection />
+      <ResponsiveSection />
+      <IntegrateSection />
+      <StoriesSection />
     </>
   );
 };
