@@ -23,7 +23,7 @@ const StoriesSection = () => {
               <Button
                 as={Link}
                 href="#"
-                className="mt-14 flex h-auto w-fit bg-primary-500 px-4 py-2.5 text-base text-white sm:text-lg"
+                className="mt-14 flex h-auto w-fit bg-primary-500 px-4 py-2.5 text-base text-white sm:text-lg phone:w-full"
                 variant="flat"
                 endContent={<ChevronRight className="size-5" />}
               >

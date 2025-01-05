@@ -3,6 +3,7 @@
 import { integrateLists } from '@/app/constants';
 
 import { Button } from '@nextui-org/react';
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import CardMarque from './ui/CardMarquee';
 
@@ -21,12 +22,13 @@ const IntegrateSection = () => {
                   source of insight.
                 </p>
                 <Button
+                  endContent={<ChevronRight />}
                   as={Link}
                   href="#"
                   className="h-auto w-full bg-primary-500 px-9 py-[13px] text-lg text-white md:w-fit"
                   variant="flat"
                 >
-                  Learn more
+                  More Integrations
                 </Button>
               </div>
             </div>

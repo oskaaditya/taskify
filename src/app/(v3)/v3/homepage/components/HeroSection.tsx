@@ -25,7 +25,7 @@ const HeroSection = () => {
             <p className="font-medium uppercase text-primary-500">#1 TOP PRODUCTS</p>
             <div className="item-start flex w-full flex-col justify-between gap-4">
               <h1 className="max-w-[550px] text-[28px] font-medium md:text-h1">
-                The better <br></br> way for your customer needs.
+                The better way for your customer needs.
               </h1>
               <div className="space-y-8">
                 <p className="max-w-[490px] text-lg text-neutral-500">
