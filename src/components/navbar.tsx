@@ -74,7 +74,11 @@ const NavbarComponent: FC<INavbar> = ({ showBanner = true }) => {
                     <NavbarItem>
                       <DropdownTrigger>
                         <Link
-                          className={`w-full ${pathname === item.url ? 'font-bold text-primary-500' : 'text-neutral-600'} `}
+                          className={`w-full ${
+                            item.submenu.some((submenuItem) => pathname === submenuItem.url) || pathname === item.url
+                              ? 'font-bold text-primary-500'
+                              : 'text-neutral-600'
+                          }`}
                           href={'#'}
                         >
                           {item.name}

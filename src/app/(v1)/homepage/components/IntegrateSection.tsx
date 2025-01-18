@@ -1,8 +1,9 @@
 import { integrateLists } from '@/app/constants';
+import { Marquee } from '@/components/ui/Marquee';
 import { Button } from '@nextui-org/react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import SliderCardIntegrate from './ui/SliderCardIntegrate';
+import CardIntegrate from './ui/CardIntegrate';
 
 const IntegrateSection = () => {
   return (
@@ -18,7 +19,11 @@ const IntegrateSection = () => {
         </div>
       </div>
       <div className="mt-14 flex justify-center gap-8">
-        <SliderCardIntegrate data={integrateLists} />
+        <Marquee className="[--gap:3rem]">
+          {integrateLists.map((item, index) => (
+            <CardIntegrate img={item.logo} name={item.title} description={item.description} key={index} />
+          ))}
+        </Marquee>
       </div>
       <Button
         as={Link}
