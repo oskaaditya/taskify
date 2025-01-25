@@ -11,7 +11,7 @@ interface IAccordion {
   version?: 1 | 2;
 }
 
-const AccordionFaq: FC<IAccordion> = ({ data, version }) => {
+const AccordionFaq: FC<IAccordion> = ({ data, version = 1 }) => {
   const faqStyleV1 = {
     base: 'px-4 py-6 border-b border-b-neutral-200 data-[open=true]:border data-[open=true]:border-b-transparent data-[open=true]:border-primary-500 data-[open=true]:rounded-2xl w-full ',
     title: 'font-medium text-lg md:text-2xl text-neutral-600 py-0',
