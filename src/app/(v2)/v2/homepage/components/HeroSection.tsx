@@ -30,7 +30,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="mt-14 space-y-10">
-          <div className="mx-auto grid max-w-[860px] gap-24 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-[860px] gap-6 md:grid-cols-3 lg:gap-24">
             {highlightTagList.map((item, index) => (
               <div key={index} className="flex w-auto items-start gap-4 font-medium md:gap-6">
                 {item.Icon && <item.Icon className="size-6 text-primary-500 md:size-8" />}
@@ -54,7 +54,7 @@ const HeroSection = () => {
               <Image
                 key={index}
                 src={item.src}
-                className="phone:max-w-20 h-auto w-full max-w-[190px]"
+                className="h-auto w-full max-w-[190px] phone:max-w-20"
                 alt={`dummy logo ${index}`}
               />
             ))}

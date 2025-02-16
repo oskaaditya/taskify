@@ -17,12 +17,12 @@ const CardProducts: FC<IFeatures> = ({ title, description, image, id }) => {
     >
       <div className={`relative z-10 min-h-[170px] space-y-4 `}>
         <h2
-          className={`text-[28px] font-medium ${id === 2 ? 'text-neutral-900' : 'text-white'} ${id === 3 ? 'text-center' : 'text-start'} lg:text-5xl`}
+          className={`text-[28px] font-medium ${id === 2 ? 'text-neutral-900' : 'text-white'} ${id === 3 ? 'text-center' : 'text-center lg:text-start'} lg:text-5xl`}
         >
           {title}
         </h2>
         <p
-          className={`mx-auto max-w-[519px] text-sm ${id === 2 ? 'text-neutral-900' : 'text-white'} ${id === 3 ? 'text-center' : 'text-start'} lg:text-base`}
+          className={`mx-auto max-w-[519px] text-sm ${id === 2 ? 'text-neutral-900' : 'text-white'} ${id === 3 ? 'text-center' : 'text-center lg:text-start'} lg:text-base`}
         >
           {description}
         </p>
@@ -34,10 +34,10 @@ const CardProducts: FC<IFeatures> = ({ title, description, image, id }) => {
           alt="title"
           width={2880}
           height={800}
-          className="absolute -bottom-8 -mb-[20px] h-auto w-full max-w-[720px] md:-mb-[40px] lg:-mb-[125px]"
+          className="absolute -bottom-8 -mb-[20px] h-auto w-full max-w-[335px] md:-mb-24 md:max-w-[720px] lg:-mb-[125px]"
         />
       ) : (
-        <div className="absolute -bottom-8 mx-auto -mb-[20px] flex h-auto w-full max-w-5xl gap-8 md:-mb-[40px] lg:-mb-[125px]">
+        <div className="absolute -bottom-8 -mb-[20px] flex h-auto w-full max-w-5xl gap-8 sm:-left-[20%] md:-mb-24 lg:left-[10%] lg:-mb-[125px]">
           <Image
             quality={100}
             src={image}

@@ -9,7 +9,7 @@ const StoriesSection = () => {
     <section className="relative overflow-hidden bg-white px-5 py-20">
       <div className="container mx-auto">
         <div className="space-y-14">
-          <div className="flex items-center justify-between gap-6 phone:flex-col">
+          <div className="flex items-center justify-between gap-6 phone:flex-col phone:items-start">
             <div className="space-y-4">
               <p className="font-medium uppercase text-primary-500">STORIES</p>
               <div className="item-start flex w-full flex-col justify-between gap-4">

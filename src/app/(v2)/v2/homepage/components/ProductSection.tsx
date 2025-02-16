@@ -3,9 +3,9 @@ import CardProducts from './ui/CardProducts';
 
 const ProductSection = () => {
   return (
-    <section className="relative overflow-hidden bg-neutral-50 px-5 py-20">
+    <section className="relative overflow-hidden bg-neutral-50 px-5 py-8 lg:py-20">
       <div className="container mx-auto">
-        <div className="space-y-14">
+        <div className="space-y-8 lg:space-y-14">
           <div className="space-y-4">
             <p className="font-medium uppercase text-primary-500">PRODUCTS</p>
             <div className="item-start flex w-full flex-col justify-between gap-4">
@@ -17,7 +17,7 @@ const ProductSection = () => {
               </div>
             </div>
           </div>
-          <div className="hidden grid-cols-2 gap-8 lg:grid">
+          <div className="grid-cols-1 gap-8 lg:grid lg:grid-cols-2">
             {productsHomeList.map((item) => (
               <CardProducts
                 key={item.id}
