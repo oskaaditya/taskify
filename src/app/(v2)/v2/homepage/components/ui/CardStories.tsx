@@ -4,9 +4,9 @@ import { FC } from 'react';
 
 const CardStories: FC<IStoriesCard> = ({ logo, background, name, stories, position }) => {
   return (
-    <div className="flex gap-4 rounded-[20px] bg-neutral-50">
-      <div className="relative flex w-full max-w-[204px] flex-col items-center justify-center">
-        <Image src={background} fill alt={name} className="rounded-l-[20px] object-cover" />
+    <div className="flex gap-4 rounded-[20px] bg-neutral-50 phone:flex-col">
+      <div className="relative flex w-full max-w-[204px] flex-col items-center justify-center phone:min-h-[200px] phone:max-w-none">
+        <Image src={background} fill alt={name} className="object-cover sm:rounded-l-[20px] phone:rounded-t-[20px]" />
         <Image
           src={logo}
           alt={name}

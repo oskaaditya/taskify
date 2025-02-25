@@ -2,6 +2,7 @@ import { dummyLogosHome, highlightTagList } from '@/app/constants';
 import { Button, Image } from '@nextui-org/react';
 import Link from 'next/link';
 import { BackgroundHero } from './ui/Background';
+import HighlightTag from './ui/HighlightTag';
 
 const HeroSection = () => {
   return (
@@ -30,7 +31,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="mt-14 space-y-10">
-          <div className="mx-auto grid max-w-[860px] gap-6 md:grid-cols-3 lg:gap-24">
+          <div className="lg:gap-24` mx-auto grid max-w-[860px] gap-6 md:grid-cols-3 phone:hidden">
             {highlightTagList.map((item, index) => (
               <div key={index} className="flex w-auto items-start gap-4 font-medium md:gap-6">
                 {item.Icon && <item.Icon className="size-6 text-primary-500 md:size-8" />}
@@ -47,7 +48,13 @@ const HeroSection = () => {
             src="https://res.cloudinary.com/diuj6zd9p/image/upload/v1718938655/taskify/assets/images/dashboard-features.png"
           />
         </div>
-        <div className="mt-[72px] flex flex-col items-center justify-center gap-6">
+        <div className="mt-2 hidden grid-cols-3 gap-2 phone:grid">
+          {highlightTagList.map((item, index) => (
+            <HighlightTag key={index} Icon={item.Icon} title={item.title} />
+          ))}
+        </div>
+
+        <div className="mt-[72px] flex flex-col items-center justify-center gap-6 phone:hidden">
           <p className="text-xl text-neutral-500">{`Trusted by world's best companies`}</p>
           <div className="flex flex-wrap justify-center gap-6 lg:justify-start">
             {dummyLogosHome.map((item, index) => (

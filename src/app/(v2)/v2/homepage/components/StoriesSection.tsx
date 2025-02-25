@@ -3,6 +3,7 @@ import { Button } from '@nextui-org/react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import CardStories from './ui/CardStories';
+import SliderStories from './ui/Slider';
 
 const StoriesSection = () => {
   return (
@@ -31,10 +32,13 @@ const StoriesSection = () => {
               </Button>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 phone:hidden">
             {storiesList.slice(0, 2).map((item, index) => (
               <CardStories key={index} {...item} />
             ))}
+          </div>
+          <div className="block md:hidden">
+            <SliderStories data={storiesList} />
           </div>
         </div>
       </div>
