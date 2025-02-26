@@ -549,6 +549,26 @@ export const integrateLists: IntegrateCardProps[] = [
     logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065801/taskify/assets/images/gl27g2qofqjb9wjczt70.png',
     description: 'Keeping your track of upcoming meetings, deadlines, and milestones.',
   },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065801/taskify/assets/images/nyxniidzzjjd2o8eilbr.png',
+    description: 'Collaborate, manage projects, and reach new productivity peaks workflows.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065801/taskify/assets/images/a2nq4gm13gw2mkfyoswt.png',
+    description: 'a cloud-based platform that provides a variety of tools and services for building.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065800/taskify/assets/images/vbwx2iixtwrjmhzagjiz.png',
+    description: 'Build software to meet customer needs, set your team, and keep your business in sync.',
+  },
+  {
+    title: 'Lorem Ipsum',
+    logo: 'https://res.cloudinary.com/diuj6zd9p/image/upload/v1732065801/taskify/assets/images/gl27g2qofqjb9wjczt70.png',
+    description: 'Keeping your track of upcoming meetings, deadlines, and milestones.',
+  },
 ];
 
 export const storiesList: IStoriesCard[] = [

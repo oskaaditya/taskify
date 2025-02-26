@@ -19,7 +19,7 @@ const CardProducts: FC<IProductsCardProps> = ({ id, title, image, description })
   return (
     <div
       className={cn(
-        'relative flex w-full flex-col items-center justify-start gap-12 overflow-hidden rounded-2xl pt-7 lg:pt-14 xl:min-h-[500px]',
+        'relative flex min-h-[400px] w-full flex-col items-center justify-start gap-12 overflow-hidden rounded-2xl py-10 lg:pt-14 xl:min-h-[500px]',
         {
           'bg-primary-500': id === 1,
           'bg-white shadow-md': id === 2,
@@ -51,7 +51,7 @@ const CardProducts: FC<IProductsCardProps> = ({ id, title, image, description })
         alt="title"
         width={2880}
         height={800}
-        className="relative -mb-[80px] h-auto w-full max-w-[720px] lg:-mb-[225px]"
+        className="relative -mb-[80px] h-auto w-full max-w-[720px] lg:-mb-[225px] phone:bottom-7 phone:max-w-[360px]"
       />
     </div>
   );

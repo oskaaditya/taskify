@@ -27,3 +27,11 @@ h4 {
   background-color: #f5f5f5;
   color: #9fa3a6;
 }
+
+#SliderCardIntegrate .swiper-wrapper {
+  align-items: center;
+}
+
+#SliderCardIntegrate .swiper-container {
+  width: 100vw;
+}
