@@ -1,11 +1,14 @@
+import { fadeUpChildVariants } from '@/animations/variants';
 import { IFeatures } from '@/interfaces/IFeatures';
 import { cn } from '@/utils/utils';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FC } from 'react';
 
 const CardProducts: FC<IFeatures> = ({ title, description, image, id }) => {
   return (
-    <div
+    <motion.div
+      variants={fadeUpChildVariants}
       className={cn(
         'relative flex h-auto min-h-[448px] w-full flex-col gap-10 overflow-hidden rounded-2xl px-7 pt-7 md:min-h-[500px] md:gap-12 lg:px-12 lg:py-14',
         {
@@ -32,7 +35,7 @@ const CardProducts: FC<IFeatures> = ({ title, description, image, id }) => {
         height={800}
         className="absolute -bottom-8 -mb-[20px] h-auto w-full max-w-[720px] md:-mb-[40px] lg:-mb-[125px]"
       />
-    </div>
+    </motion.div>
   );
 };
 
