@@ -1,9 +1,11 @@
 'use client';
 
+import { fadeUpChildVariants } from '@/animations/variants';
 import MinusIcon from '@/components/icons/MinusIcon';
 import PlusIcon from '@/components/icons/PlusIcon';
 import { IFaq } from '@/interfaces/IPricing';
 import { Accordion, AccordionItem } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 import { FC } from 'react';
 
 interface IAccordion {
@@ -29,7 +31,7 @@ const AccordionFaq: FC<IAccordion> = ({ data, version = 1 }) => {
   };
 
   return (
-    <div className="rounded-2xl">
+    <motion.div variants={fadeUpChildVariants} className="rounded-2xl">
       <Accordion isCompact selectionMode="single" showDivider={false} className="!px-0">
         {data.map((item, index) => (
           <AccordionItem
@@ -44,7 +46,7 @@ const AccordionFaq: FC<IAccordion> = ({ data, version = 1 }) => {
           </AccordionItem>
         ))}
       </Accordion>
-    </div>
+    </motion.div>
   );
 };
 

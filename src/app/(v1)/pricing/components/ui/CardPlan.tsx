@@ -1,6 +1,9 @@
+'use client';
+import { fadeUpChildVariants } from '@/animations/variants';
 import CheckList from '@/components/icons/CheckList';
 import { IPlan } from '@/interfaces/IPricing';
 import { Button } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FC } from 'react';
 import { BackgroundPlanEnterprisePattern } from './Background';
@@ -13,10 +16,10 @@ const CardPlan: FC<ICardPlan> = ({ data }) => {
   return (
     <>
       {data.map((plan) => (
-        <div key={plan.id} className="space-y-4">
+        <motion.div variants={fadeUpChildVariants} key={plan.id} className="space-y-4">
           {/* Card Top */}
           <div
-            className={`relative flex flex-col gap-8 overflow-hidden rounded-2xl border border-neutral-200 px-6 pb-4 pt-6 ${plan.id === 3 && 'bg-primary-600'}`}
+            className={`relative flex flex-col gap-8 overflow-hidden rounded-2xl border border-neutral-200 px-6 pb-4 pt-6 ${plan.id === 3 ? 'bg-primary-600' : 'bg-white'}`}
           >
             {plan.id === 3 && <BackgroundPlanEnterprisePattern />}
             <h4
@@ -46,7 +49,7 @@ const CardPlan: FC<ICardPlan> = ({ data }) => {
             </Button>
           </div>
           {/* Card Top */}
-          <div className="flex flex-col gap-8 rounded-2xl border border-neutral-200 px-6 pb-4 pt-6">
+          <div className="flex flex-col gap-8 rounded-2xl border border-neutral-200 bg-white px-6 pb-4 pt-6">
             {plan.features.map((item, index) => (
               <div key={index} className="flex items-center gap-4">
                 <CheckList active={plan.id !== 1 || (index !== 0 && index !== 1)} />
@@ -54,7 +57,7 @@ const CardPlan: FC<ICardPlan> = ({ data }) => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       ))}
       ;
     </>
