@@ -1,8 +1,11 @@
+'use client';
+import { fadeUpChildVariants } from '@/animations/variants';
 import CraftmanShipIcon from '@/components/icons/CraftmanshipIcon';
 import InnovationIcon from '@/components/icons/InnovationIcon';
 import UserCentricIcon from '@/components/icons/UserCentricIcon';
 import { ICompanyHiglight } from '@/interfaces/ICompany';
 import { Button } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const Highlight = () => {
@@ -31,7 +34,7 @@ const Highlight = () => {
     <div className="grid grid-cols-1 gap-20 md:grid-cols-3 md:gap-8">
       {highlightLists.map((item, index) => {
         return (
-          <div key={index} className="space-y-6 text-white">
+          <motion.div variants={fadeUpChildVariants} key={index} className="space-y-6 text-white">
             {item.icon}
             <div className="flex flex-col space-y-4 text-start">
               <p className="text-h3 font-medium">{item.title}</p>
@@ -45,7 +48,7 @@ const Highlight = () => {
                 Learn More
               </Button>
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </div>
