@@ -1,11 +1,24 @@
+'use client';
+import { containerVariants, fadeUpChildVariants } from '@/animations/variants';
+import { useInViewAnimation } from '@/hooks/useInViewAnimation';
 import { Button } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { desc, tag, title } from '../constants';
 
 const Cta = () => {
+  const [ref, animationState] = useInViewAnimation(containerVariants);
   return (
-    <section className="relative  px-5 py-10 md:pb-[94px] md:pt-[70px] xl:px-20">
+    <motion.section
+      ref={ref}
+      variants={containerVariants}
+      initial="initial"
+      animate={animationState}
+      whileInView="animate"
+      viewport={{ once: true, amount: 0.2 }}
+      className="relative  px-5 py-10 md:pb-[94px] md:pt-[70px] xl:px-20"
+    >
       <div className="container mx-auto">
         <div className="relative rounded-xl bg-additional-navy px-5 py-10 md:px-14">
           <Image
@@ -21,13 +34,20 @@ const Cta = () => {
           />
           <div className=" flex flex-col justify-between gap-4 md:flex-row md:items-center">
             <div className="flex max-w-[450px] flex-col gap-4">
-              <p className="text-sm font-medium text-white md:text-base">{tag}</p>
-              <h2 className="text-[28px] font-medium !leading-[120%] tracking-tighter text-white md:text-5xl">
+              <motion.p variants={fadeUpChildVariants} className="text-sm font-medium text-white md:text-base">
+                {tag}
+              </motion.p>
+              <motion.h2
+                variants={fadeUpChildVariants}
+                className="text-[28px] font-medium !leading-[120%] tracking-tighter text-white md:text-5xl"
+              >
                 {title}
-              </h2>
-              <p className="text-white">{desc}</p>
+              </motion.h2>
+              <motion.p variants={fadeUpChildVariants} className="text-white">
+                {desc}
+              </motion.p>
             </div>
-            <div className="flex max-w-[380px] flex-col gap-6">
+            <motion.div variants={fadeUpChildVariants} className="flex max-w-[380px] flex-col gap-6">
               <Button
                 as={Link}
                 href="#"
@@ -36,11 +56,11 @@ const Cta = () => {
               >
                 Get Started
               </Button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

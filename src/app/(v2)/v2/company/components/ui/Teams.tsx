@@ -1,14 +1,15 @@
 'use client';
 
+import { fadeInVariants, fadeUpChildVariants } from '@/animations/variants';
 import InstgramIcon from '@/components/icons/InstagramIcon';
 import LinkedinIcon from '@/components/icons/LinkedinIcon';
 import TwitterBirdIcon from '@/components/icons/TwitterBirdIcon';
 import { ITeamsCompany } from '@/interfaces/ICompany';
 import { Image } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 import { FC } from 'react';
 import SliderV2 from './Slider';
 import SocialMediaLinks from './SocialMediaLinks';
-
 interface ITeams {
   data: ITeamsCompany[];
 }
@@ -18,7 +19,7 @@ const Teams: FC<ITeams> = ({ data }) => {
     <>
       <div className="hidden grid-cols-1 gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
         {data.map((team, index) => (
-          <div key={index} className="relative">
+          <motion.div variants={fadeUpChildVariants} key={index} className="relative">
             <Image src={team.photo} radius="none" className="mb-6 min-h-[640px] w-full object-cover md:h-full" />
             <div className="absolute bottom-12 z-20 px-4">
               <div className="mb-4 space-y-2">
@@ -37,10 +38,12 @@ const Teams: FC<ITeams> = ({ data }) => {
                 )}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-      <SliderV2 data={data} />
+      <motion.div variants={fadeInVariants}>
+        <SliderV2 data={data} />
+      </motion.div>
     </>
   );
 };

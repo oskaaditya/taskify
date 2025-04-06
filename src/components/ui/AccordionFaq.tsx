@@ -23,7 +23,7 @@ const AccordionFaq: FC<IAccordion> = ({ data, version = 1 }) => {
   };
 
   const faqStyleV2 = {
-    base: 'p-6 border-b border-b-neutral-200 w-full max-w-[663px] data-[open=true]:bg-white',
+    base: 'p-6 border-b border-b-neutral-200 w-full max-w-[663px] data-[open=true]:bg-white data-[open=true]:rounded-lg data-[open=true]:rounded-lg',
     title: 'font-medium text-lg md:text-2xl text-neutral-600 py-0',
     trigger: 'py-0 bg-transparent rounded-lg flex items-center',
     indicator: 'text-neutral-600',
